@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-// @ts-ignore
 import { basePath } from "../../next.config";
 const BASE_PATH = basePath ? basePath : "";
 
