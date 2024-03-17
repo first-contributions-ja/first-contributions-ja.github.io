@@ -97,28 +97,26 @@
 - **作成ルール**
   - 基本的にDiscussionやDiscordで決まった新機能や、バグについてのみIssueを立てる
 - **作成手順**
-  - 各テンプレートに沿って内容を作成
-  - 未設定（後日追加予定）
-    - [新機能追加のテンプレート]()
-    - [バグ修正のテンプレート]()
+  - テンプレートに沿って内容を作成
+    - [テンプレート](https://github.com/first-contributions-ja/first-contributions-ja.github.io/blob/main/.github/ISSUE_TEMPLATE/%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88.md?plain=1)
+    - ~~[バグ修正用テンプレート]()~~ 必要があれば後日作成する
 - **Closeについて**
   - Issueに伴うブランチがマージされたらcloseすること（Pull Requestのコメントでcloseする）
 
 
 ## Pull Request
+- **作成ルール**
+  - 基本的にIssueに対してブランチを作成し、プルリクエストを行う
+- **作成手順**
+  - プルリクエスト作成画面のURL末尾に以下を追加する
+    ```markdown
+    ?quick_pull=1&template=pr.md
+    ```
+  - プルリク画面URL
+    - `https://github.com/first-contributions-ja/first-contributions-ja.github.io/compare/main...branchname`
+  - テンプレートを追加したURL
+    - `https://github.com/first-contributions-ja/first-contributions-ja.github.io/compare/main...branchname?quick_pull=1&template=pr.md`
 
-- 未設定（後日追加予定）
-  - [テンプレート]()
-
-**現状フォーマット**
-
-```markdown
-## 概要
-
-## 関連するIssue
-closed #issue番号
-```
-ref: [行動規範の作成 by kazzyfrog · Pull Request #14 · first-contributions-ja/first-contributions-ja](https://github.com/first-contributions-ja/first-contributions-ja/pull/14)
 
 ## Branch
 
