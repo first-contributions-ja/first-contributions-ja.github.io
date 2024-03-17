@@ -126,21 +126,16 @@ ref: [行動規範の作成 by kazzyfrog · Pull Request #14 · first-contributi
   - 基本: `prefix/#issue番号_タイトル`
   - 例: `docs/#01_create_documents`
 - prefix
-  - `feat`: 新機能追加関連
-  - `docs`: ドキュメント関連
-  - `fix`: バグ修正関連
-  - その他は適宜追加
-
+  - コミットメッセージのprefixを参考
 
 ## コミットメッセージ
 
 - 命名規則
   - 基本: `絵文字 prefix: 内容 #issue番号`
-  - 例: `📝 docs: README.md 日本語訳追加 #12`
+  - 例: `📚 docs: README.md 日本語訳追加 #12`
 - 絵文字/prefix
-  - ✨ `feat`: 新機能追加関連
-  - 📚 `docs`: ドキュメント関連
-  - 🐛 `fix`: バグ修正関連
-  - 🎨 `style`: スタイル関連
-  - 🔥 `delete`: コードやファイルの削除
-  - その他は適宜追加
+  - `✨ feat`: 新機能追加関連
+  - `📚 docs`: ドキュメントの追加・修正・削除
+  - `🐛 fix`: 機能やバグに関する修正
+  - `🎨 style`: スタイル関連
+  - その他は必要に応じて適宜追加
