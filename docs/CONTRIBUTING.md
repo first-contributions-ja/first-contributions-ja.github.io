@@ -135,10 +135,12 @@ ref: [行動規範の作成 by kazzyfrog · Pull Request #14 · first-contributi
 ## コミットメッセージ
 
 - 命名規則
-  - 基本: `prefix: 内容 #issue番号`
-  - 例: `docs: README.md 日本語訳追加 #12`
-- prefix
-  - `feat`: 新機能追加関連
-  - `docs`: ドキュメント関連
-  - `fix`: バグ修正関連
+  - 基本: `絵文字 prefix: 内容 #issue番号`
+  - 例: `📝 docs: README.md 日本語訳追加 #12`
+- 絵文字/prefix
+  - ✨ `feat`: 新機能追加関連
+  - 📚 `docs`: ドキュメント関連
+  - 🐛 `fix`: バグ修正関連
+  - 🎨 `style`: スタイル関連
+  - 🔥 `delete`: コードやファイルの削除
   - その他は適宜追加
