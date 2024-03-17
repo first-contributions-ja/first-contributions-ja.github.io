@@ -106,10 +106,16 @@
 
 ## Pull Request
 - **作成ルール**
-  - 基本的にIssueに対してコードを作成し、プルリクエストを行う
+  - 基本的にIssueに対してブランチを作成し、プルリクエストを行う
 - **作成手順**
-  - テンプレートに沿って内容を作成
-    - [テンプレート](https://github.com/first-contributions-ja/first-contributions-ja.github.io/blob/main/.github/PULL_REQUEST_TEMPLATE%20/pr.md?plain=1)
+  - プルリクエスト作成画面のURL末尾に以下を追加する
+    ```markdown
+    ?quick_pull=1&template=pr.md
+    ```
+  - プルリク画面URL
+    - `https://github.com/first-contributions-ja/first-contributions-ja.github.io/compare/main...branchname`
+  - テンプレートを追加したURL
+    - `https://github.com/first-contributions-ja/first-contributions-ja.github.io/compare/main...branchname?quick_pull=1&template=pr.md`
 
 
 ## Branch
