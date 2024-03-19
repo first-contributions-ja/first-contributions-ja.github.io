@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,7 +29,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${notojp.variable}`}>
         <header>ヘッダー</header>
         {children}
-        <footer>&copy; first-contributions-ja</footer>
+        <Footer />
       </body>
     </html>
   );
