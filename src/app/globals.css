@@ -2,12 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"); */
-
-
 body {
   font-family: var(--font-inter), var(--font-notojp);
+  @apply text-zinc-900;
 }
 
 /* https://zenn.dev/var/articles/3cd463f2388a35 

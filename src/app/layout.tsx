@@ -25,7 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${inter.variable} ${notojp.variable}`}>{children}</body>
+      <body className={`${inter.variable} ${notojp.variable}`}>
+        <header>ヘッダー</header>
+        {children}
+        <footer>&copy; first-contributions-ja</footer>
+      </body>
     </html>
   );
 }
