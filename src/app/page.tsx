@@ -34,7 +34,21 @@ export default function Home() {
           />
         </div>
       </section>
-      <section>ABOUT</section>
+      <section className="bg-red-600 px-10 py-12">
+        <div className="bg-white p-20 rounded-xl">
+          <h2 className="text-red-600 text-4xl font-bold text-center">簡単７ステップでコントリビューション！</h2>
+          <div className="text-2xl font-bold mt-10 mb-16 leading-loose max-w-[500px] mx-auto">
+            <p>1. ローカルリポジトリにクローンする</p>
+            <p>2. ブランチを作成する</p>
+            <p>3. ソースコードを変更する</p>
+            <p>4. 変更をコミットする</p>
+            <p>5. コミット内容をプッシュする</p>
+            <p>6. プルリクエストを作成する</p>
+            <p>7. マージされるのを待つ</p>
+          </div>
+          <button className="bg-red-600 text-white text-lg px-4 py-3 rounded-xl block mx-auto hover:opacity-70 transition">● 詳しい手順はこちら</button>
+        </div>
+      </section>
     </>
   );
 }
