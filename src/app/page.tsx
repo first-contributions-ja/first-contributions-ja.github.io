@@ -46,7 +46,12 @@ export default function Home() {
             <p>6. プルリクエストを作成する</p>
             <p>7. マージされるのを待つ</p>
           </div>
-          <button className="bg-red-600 text-white text-lg px-4 py-3 rounded-xl block mx-auto hover:opacity-70 transition">● 詳しい手順はこちら</button>
+          <div className="text-center">
+            <a
+              href="https://github.com/first-contributions-ja/first-contributions-ja.github.io"
+              className="bg-red-600 text-white text-lg px-4 py-3 rounded-xl hover:opacity-70 transition"
+            >● 詳しい手順はこちら</a>
+          </div>
         </div>
       </section>
     </>
