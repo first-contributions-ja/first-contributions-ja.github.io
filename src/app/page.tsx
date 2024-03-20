@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { basePath } from "../../next.config";
 const BASE_PATH = basePath ? basePath : "";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function Home() {
   return (
@@ -33,7 +34,32 @@ export default function Home() {
           />
         </div>
       </section>
-      <section>ABOUT</section>
+      <section className="bg-red-600 px-10 py-12">
+        <div className="bg-white p-20 rounded-xl">
+          <h2 className="text-red-600 text-4xl font-bold text-center tracking-tighter">簡単７ステップでコントリビューション！</h2>
+          <ol className="list-decimal list-inside text-2xl font-bold mt-10 mb-8 leading-loose max-w-[500px] mx-auto">
+            <li>プロジェクトをフォークする</li>
+            <li>ローカルリポジトリにクローンする</li>
+            <li>ブランチを作成する</li>
+            <li>ソースコードを変更！</li>
+            <li>コミットメッセージを添えてコミットする</li>
+            <li>コミット内容をプッシュする</li>
+            <li>プルリクエストを作成する</li>
+          </ol>
+          <div className="text-center font-bold text-2xl leading-relaxed mb-16">
+            <p className="text-4xl text-red-600 mb-8">⬇︎</p>
+            <p>マージされると……</p>
+            <p>🎉 あなたの変更がメインプロジェクトに反映されます 🎉</p>
+          </div>
+          <div className="text-center">
+            <a
+              href="https://github.com/first-contributions-ja/first-contributions-ja.github.io"
+              className="bg-red-600 text-white text-lg px-5 py-4 rounded-xl hover:opacity-70 transition">
+              <GitHubIcon fontSize="large" className="mr-3 -translate-y-0.5" />
+              詳しい手順はこちら</a>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
