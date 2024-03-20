@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { basePath } from "../../next.config";
 const BASE_PATH = basePath ? basePath : "";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function Home() {
   return (
@@ -54,8 +55,9 @@ export default function Home() {
           <div className="text-center">
             <a
               href="https://github.com/first-contributions-ja/first-contributions-ja.github.io"
-              className="bg-red-600 text-white text-lg px-4 py-3 rounded-xl hover:opacity-70 transition"
-            > 詳しい手順はこちら 🌟</a>
+              className="bg-red-600 text-white text-lg px-5 py-4 rounded-xl hover:opacity-70 transition">
+              <GitHubIcon fontSize="large" className="mr-3 -translate-y-0.5" />
+              詳しい手順はこちら</a>
           </div>
         </div>
       </section>
