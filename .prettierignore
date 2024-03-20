@@ -1,0 +1,4 @@
+# Ignore artifacts:
+.next
+docs
+.github
