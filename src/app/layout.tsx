@@ -12,7 +12,7 @@ const notojp = Noto_Sans_JP({
   weight: ["400", "500"],
   subsets: ["latin"],
   variable: "--font-notojp",
-})
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
