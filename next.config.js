@@ -3,4 +3,12 @@ const nextConfig = {
   output: "export",
 };
 
-module.exports = nextConfig;
+module.exports = {
+  ...nextConfig,
+  experimental: {
+    optimizePackageImports: [
+      '@mui/icons-material',
+      '@mui/material'
+    ],
+  },
+};
