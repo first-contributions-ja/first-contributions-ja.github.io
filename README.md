@@ -72,7 +72,7 @@
 > 9 つの簡単なステップで、オープンソースのコントリビューターになる :sunglasses:
 
 - もし助けが必要な場合、[ディスカッション](https://github.com/first-contributions-ja/first-contributions-ja.github.io/discussions)で質問してください！
-- このプロジェクトに関する改善点を見つけた場合は、[Issues](https://github.com/JavaScript-Starters/JS-RnR-ja/issues) から報告してください！
+- このプロジェクトに関する改善点を見つけた場合は、[Issues]([https://github.com/JavaScript-Starters/JS-RnR-ja/issues](https://github.com/first-contributions-ja/first-contributions-ja.github.io/issues)) から報告してください！
 
 どんな些細なことでも、大歓迎です 🙌
 
@@ -244,7 +244,7 @@ Github 上でファイルを編集することも可能ですが、<br>
 
 ## その他の貢献
 
-より多くの貢献がしたい方は、[貢献ガイドライン](./CONTRIBUTING.md)を参照してください！<br>
+より多くの貢献がしたい方は、[貢献ガイドライン](./docs/CONTRIBUTING.md)を参照してください！<br>
 コードの追加やバグの修正、ドキュメントの改善など、どんな些細な貢献も大歓迎です 🤝
 
 ## ライセンス
