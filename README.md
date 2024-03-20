@@ -72,7 +72,7 @@
 > 9 つの簡単なステップで、オープンソースのコントリビューターになる :sunglasses:
 
 - もし助けが必要な場合、[ディスカッション](https://github.com/first-contributions-ja/first-contributions-ja.github.io/discussions)で質問してください！
-- このプロジェクトに関する改善点を見つけた場合は、[Issues]([https://github.com/JavaScript-Starters/JS-RnR-ja/issues](https://github.com/first-contributions-ja/first-contributions-ja.github.io/issues)) から報告してください！
+- このプロジェクトに関する改善点を見つけた場合は、[Issues](https://github.com/first-contributions-ja/first-contributions-ja.github.io/issues) から報告してください！
 
 どんな些細なことでも、大歓迎です 🙌
 
