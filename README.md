@@ -1,6 +1,9 @@
+[![Deploy Next.js site to Pages](https://github.com/first-contributions-ja/first-contributions-ja.github.io/actions/workflows/nextjs.yml/badge.svg)](https://github.com/first-contributions-ja/first-contributions-ja.github.io/actions/workflows/nextjs.yml)
+![Static Badge](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 <img src="https://img.shields.io/badge/license-MIT-blue.svg">
 <img src="https://img.shields.io/badge/contributions-welcome-blue.svg?style=flat">
+[![Static Badge](https://img.shields.io/badge/first_contributions-%F0%9F%94%B0-white?style=flat)](https://github.com/topics/first-contributions)
 
 # First Contributions ja
 
@@ -71,7 +74,7 @@
 
 > 9 つの簡単なステップで、オープンソースのコントリビューターになる :sunglasses:
 
-- もし助けが必要な場合、[ディスカッション](https://github.com/first-contributions-ja/first-contributions-ja.github.io/discussions)で質問してください！
+- もし助けが必要な場合、[Discussions](https://github.com/first-contributions-ja/first-contributions-ja.github.io/discussions)で質問してください！
 - このプロジェクトに関する改善点を見つけた場合は、[Issues](https://github.com/first-contributions-ja/first-contributions-ja.github.io/issues) から報告してください！
 
 どんな些細なことでも、大歓迎です 🙌
@@ -210,7 +213,7 @@ Github 上でファイルを編集することも可能ですが、<br>
   - その場合、先ほどと同じ作業用ブランチに戻り、要求された修正を行ったら、同じように[変更をコミット](#step-5変更をコミット)してプッシュするだけです。
   - PR は新しいプッシュによって、自動的に更新されます。
 
-ほとんどの場合は 24 時間以内にレビューしますが、数日の遅れが発生することもあります。気長にお待ちください。
+ほとんどの場合は 24 時間以内にレビューしますが、数日の遅れが発生することもあります。気長にお待ちください☕
 
 ---
 
@@ -219,26 +222,26 @@ Github 上でファイルを編集することも可能ですが、<br>
 - プルリクエストが承認されると、それはメインプロジェクトにマージされます。
 
 お疲れ様です！<br>
-そして first-contributions-ja に時間と労力を割いて貢献していただきありがとうございます！！
+そして first-contributions-ja に、時間と労力を割いて貢献していただきありがとうございます！！
 
 <br>
 
 ## さらなるステップ
 
-> あなたは、オープンソースのプロジェクトに貢献する方法を学びました！
-
-もしこのプロジェクトが役に立つと思った場合は、ページの上部から ⭐**star ボタン**を押してください！<br>
-また、このプロジェクトを広めるために、フォロワーや知り合いに共有してください！
+あなたは、オープンソースのプロジェクトに貢献する方法を学びました！
 
 - 行った作業を振り返って、知識を定着させてください。
   - あなたはコントリビューターとしてよく体験する、標準的なワークフロー（**ドキュメントを読む → フォーク → 変更を加える → プルリクエスト**）を完了したところです！
 - first-contributions-ja は、オープンソースで運営・開発されているプロジェクトなので、上記の[チュートリアル](#実際に手を動かす)とは**別の形で貢献**することもできます。
   - もし興味があれば、[その他の貢献](#その他の貢献)を確認してください。
-  - または、[ディスカッション](https://github.com/first-contributions-ja/first-contributions-ja.github.io/discussions)にて、このプロジェクトに関する感想を聞かせてください 🙌
+  - または、[Discussions](https://github.com/first-contributions-ja/first-contributions-ja.github.io/discussions)にて、このプロジェクトに関する感想を聞かせてください 🙌
 - 他のオープンソースプロジェクトにも、貢献してみてください！
-  - Guthub 上の初心者向けのトピック([first-contributions](https://github.com/topics/first-contributions)や[good-first-issue](https://github.com/topics/good-first-issue)）を是非チェックしてみてて！
+  - Guthub 上の初心者向けのトピック([first-contributions](https://github.com/topics/first-contributions)や[good-first-issue](https://github.com/topics/good-first-issue)）をチェックしてみてください！
   - 貢献したいリポジトリがあれば、「**good first issue**」というラベルのついたイシューを探してください。
   - これは一般的に、特定のプロジェクトやオープンソース自体に慣れていない初心者向けのイシューであることを表します！
+
+> もしこのプロジェクトが役に立つと思った場合は、ページの上部から ⭐**star ボタン**を押してください！<br>
+また、このプロジェクトを広めるために、フォロワーや知り合いに共有してください！
 
 <br>
 
@@ -253,4 +256,4 @@ Github 上でファイルを編集することも可能ですが、<br>
 
 ## 謝辞
 
-このプロジェクトは、[first-contributions](https://github.com/firstcontributions/first-contributions)や[Contribute-To-This-Project](https://github.com/Syknapse/Contribute-To-This-Project)などの、初心者フレンドリーに設計された素晴らしいプロジェクトから影響を受けています！
+このプロジェクトは、[first-contributions](https://github.com/firstcontributions/first-contributions)や[Contribute-To-This-Project](https://github.com/Syknapse/Contribute-To-This-Project)などの、初心者フレンドリーに設計された素晴らしいプロジェクトから影響を受けています。
