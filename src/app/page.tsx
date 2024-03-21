@@ -2,6 +2,7 @@ import Image from "next/image";
 import { basePath } from "../../next.config";
 const BASE_PATH = basePath ? basePath : "";
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { SITE_NAME } from "../../lib/constants";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
             コントリビューション体験
           </p>
           <h2 className="bg-red-600 text-white text-5xl inline-block px-4 py-2 font-bold mt-4">
-            first-contributions-ja
+            {SITE_NAME}
           </h2>
           <p className="mt-4">
             完全日本語のコントリビューション体験リポジトリです。フォーク、クローン、コミット、プルリクを行うことでOSSプロジェクト貢献方法を学べます。
