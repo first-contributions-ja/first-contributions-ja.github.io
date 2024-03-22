@@ -22,7 +22,7 @@
 
 ### これは誰のためのものですか？
 
-- Git/ Github の、実践的な使い方を学びたい初心者
+- Git/Github の、実践的な使い方を学びたい初心者
 - オープンソースに興味があるが、どのように貢献すればよいかわからない人々
 - もしくは、より多くの貢献を通して、コラボレーションを楽しみながら、スキルを高めたい方
 
@@ -46,10 +46,6 @@
 さっそくオープンソースプロジェクトへの貢献を、体験してみましょう！
 
 ### どんな貢献をすればいいの？
-<!-- 🚧TODO: 
-以下のContributors.jsonに記載するデータは、変更される可能性が高い。
-プロフィールカードを作成して、それがWebサイト上にどのように表示されるのかのスクリーンショットを用意する。
--->
 
 > このプロジェクトの参加者として、Contributors.json ファイルに必要な情報を入力し、プロフィールカードを作成します！
 
@@ -58,7 +54,7 @@
 "name": "あなたのハンドルネーム",
 "github": "あなたのGithubアカウントのURL",
 "favoriteStack": "あなたの好きなプログラミング言語・技術スタック",
-"text": "自己紹介・挨拶"
+"introduction": "自己紹介・挨拶"
 ```
 
 これから行うチュートリアルは、次の９つのステップで完了します！<br>
@@ -151,33 +147,29 @@ Github 上でファイルを編集することも可能ですが、<br>
 - 作業を開始するため、VSCode などのお好きなコードエディタで、クローンしたフォルダを開きます。
   - 変更を加える前に、前のステップで作成したブランチで作業することを確認してください。
 - それでは Contributors.json ファイルに変更を加えます。
-  - **Contributors.json ファイルを１番下までスクロールし、リストの最後に、以下のコードを貼り付けます。**
+  - **Contributors.json ファイルの「リストの先頭」に、以下のコードをコピーして貼り付けます。**
   ```
-  ,{
+  {
     "name": "あなたのハンドルネーム",
     "github": "あなたのGithubアカウントのURL",
-    "favoriteStack": "あなたの好きなプログラミング言語・技術スタック",
-    "text": "自己紹介・挨拶"
-  }
+    "favoriteStack": "好きなプログラミング言語・技術スタックを１つ",
+    "introduction": "自己紹介・挨拶"
+  },
   ```
-- そして、貼り付けたテキストの中身を、あなた独自の内容に置き換えます
+- そして、貼り付けたテキストの中身を、あなた独自の内容に置き換えます。
   - 例えば、全て置き換えたら以下のようになります：
   ```
   <!-- 変更後 -->
-  ,{
-    "name": "git taro",
-    "github": "https://github.com/first-contributions-ja",
-    "favoriteStack": "Github",
-    "text": "ごきげんよう 日本🍡"
-  }
+  [
+    {
+      "name": "oginochihiro",
+      "github": "https://github.com/first-contributions-ja",
+      "favoriteStack": "Github",
+      "introduction": "ここで働かせて下さい！"
+    },
+    {
+     〜〜
   ```
-
-<!-- 🚧TODO: 
-Contributors.jsonに記載するデータの値を決める。
--->
-<!-- 🚧TODO: 
-ユーザーが、手動でJSONファイルに入力するので、prettierによる整形をGithub Actionsなどで矯正したい。
--->
 
 ---
 
@@ -260,8 +252,9 @@ Contributors.jsonに記載するデータの値を決める。
 
 ## ライセンス
 
-このプロジェクトは、[MIT ライセンス](/LICENSE)の下でライセンスされています。
+このプロジェクトは、[MIT LICENSE](/LICENSE)の下でライセンスされています。
 
 ## 謝辞
 
-このプロジェクトは、[first-contributions](https://github.com/firstcontributions/first-contributions)や[Contribute-To-This-Project](https://github.com/Syknapse/Contribute-To-This-Project)などの、初心者フレンドリーに設計された素晴らしいプロジェクトから影響を受けています。
+このプロジェクトは、[first-contributions](https://github.com/firstcontributions/first-contributions)や[Contribute-To-This-Project](https://github.com/Syknapse/Contribute-To-This-Project)などの、<br>
+初心者向けに設計された素晴らしいオープンソースプロジェクトから影響を受けています。
