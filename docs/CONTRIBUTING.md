@@ -122,7 +122,7 @@ Issue には、用意されたテンプレートを利用できます！
 
 - `prefix/#issue番号_簡潔な作業内容`
 - 例: `docs/#01_create_documents`
-- `prefix`に関しては、コミットメッセージの[prefix]()を参考
+- `prefix`に関しては、コミットメッセージの`prefix`を参考
 
 手順はこちら：
 
