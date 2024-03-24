@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/badge/contributions-welcome-blue.svg?style=flat">
 [![Static Badge](https://img.shields.io/badge/first_contributions-%F0%9F%94%B0-white?style=flat)](https://github.com/topics/first-contributions)
 
-# First Contributions ja
+# First Contributions JA
 
 > 完全日本語のチュートリアルで、OSS 活動を始める 🚀
 
@@ -18,17 +18,17 @@
 
 ## はじめに
 
-このプロジェクトは、Git/Github の実践的な使い方や、オープンソースでコラボレーションする作法を学ぶための、日本語のチュートリアルです！
+このプロジェクトは、Git/GitHub の実践的な使い方や、オープンソースでコラボレーションする作法を学ぶための、日本語のチュートリアルです！
 
 ### これは誰のためのものですか？
 
-- Git/Github の、実践的な使い方を学びたい初心者
+- Git/GitHub の、実践的な使い方を学びたい初心者
 - オープンソースに興味があるが、どのように貢献すればよいかわからない人々
 - もしくは、より多くの貢献を通して、コラボレーションを楽しみながら、スキルを高めたい方
 
 ### このプロジェクトの目的は？
 
-- 1 人では学習しずらい、Github を使った実際の共同開発を体験すること
+- 1 人では学習しずらい、GitHub を使った実際の共同開発を体験すること
 - 誰もが自信を持って、オープンソースプロジェクトに貢献する方法を学ぶこと
 - そして、オープンソースカルチャーが好きな開発者同士が、繋がる手助けをすること
 
@@ -50,9 +50,10 @@
 > このプロジェクトの参加者として、Contributors.json ファイルに必要な情報を入力し、プロフィールカードを作成します！
 
 記載する情報は、以下のとおりです：
+
 ```
 "name": "あなたのハンドルネーム",
-"github": "あなたのGithubアカウントのURL",
+"github": "あなたのGitHubアカウントのURL",
 "favoriteStack": "あなたの好きなプログラミング言語・技術スタック",
 "introduction": "自己紹介・挨拶"
 ```
@@ -79,7 +80,7 @@
 > 9 つの簡単なステップで、オープンソースのコントリビューターになる :sunglasses:
 
 - もし助けが必要な場合、[Discussions](https://github.com/first-contributions-ja/first-contributions-ja.github.io/discussions)で質問してください！
-- このプロジェクトに関する改善点を見つけた場合は、[Issues](https://github.com/first-contributions-ja/first-contributions-ja.github.io/issues) から報告してください！
+- このプロジェクトに関する改善点を見つけた場合は、[Issues](https://github.com/first-contributions-ja/first-contributions-ja.github.io/issues)から報告してください！
 
 どんな些細なことでも、大歓迎です 🙌
 
@@ -90,13 +91,13 @@
 - もし GitHub のアカウントを持っていない場合は、[Sign up](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)からアカウントを作成してください。
   - そして、必要に応じて全くの初心者向けの[GitHub Hello World のチュートリアル](https://docs.github.com/ja/get-started/quickstart/hello-world)を先に行うことをお勧めします。
 - パスワードの代わりとなるアクセストークンが設定されていない場合、クローンなどのタイミングでエラーが生じることがあります。
-  - その場合は[Github アクセストークンの設定](https://docs.github.com/ja/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)を参照してください。
+  - その場合は[GitHub アクセストークンの設定](https://docs.github.com/ja/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)を参照してください。
 
 ---
 
 ### Step 1:このリポジトリをフォーク
 
-- Github 上のプロジェクトページの右上にある "Fork" ボタンをクリックして、このリポジトリをフォークします。
+- GitHub 上のプロジェクトページの右上にある "Fork" ボタンをクリックして、このリポジトリをフォークします。
 - そして、"Create fork"ボタンをクリックします。
 
 これにより、あなたの GitHub アカウントに、このリポジトリのコピーが作成されます 👍
@@ -105,7 +106,7 @@
 
 ### Step 2:ローカルマシンへクローン
 
-Github 上でファイルを編集することも可能ですが、<br>
+GitHub 上でファイルを編集することも可能ですが、<br>
 より一般的なワークフローを体験するため、フォークしたリポジトリをあなたのローカルマシンにコピーします。
 
 - ターミナルを開き、リポジトリをクローンするディレクトリに移動します。
@@ -213,7 +214,7 @@ Github 上でファイルを編集することも可能ですが、<br>
   - その場合、先ほどと同じ作業用ブランチに戻り、要求された修正を行ったら、同じように[変更をコミット](#step-5変更をコミット)してプッシュするだけです。
   - PR は新しいプッシュによって、自動的に更新されます。
 
-ほとんどの場合は 24 時間以内にレビューしますが、数日の遅れが発生することもあります。気長にお待ちください☕
+ほとんどの場合は 24 時間以内にレビューしますが、数日の遅れが発生することもあります。気長にお待ちください ☕
 
 ---
 
@@ -236,12 +237,12 @@ Github 上でファイルを編集することも可能ですが、<br>
   - もし興味があれば、[その他の貢献](#その他の貢献)を確認してください。
   - または、[Discussions](https://github.com/first-contributions-ja/first-contributions-ja.github.io/discussions)にて、このプロジェクトに関する感想を聞かせてください 🙌
 - 他のオープンソースプロジェクトにも、貢献してみてください！
-  - Guthub 上の初心者向けのトピック([first-contributions](https://github.com/topics/first-contributions)や[good-first-issue](https://github.com/topics/good-first-issue)）をチェックしてみてください！
+  - GitHub 上の初心者向けのトピック([first-contributions](https://github.com/topics/first-contributions)や[good-first-issue](https://github.com/topics/good-first-issue)）をチェックしてみてください！
   - 貢献したいリポジトリがあれば、「**good first issue**」というラベルのついたイシューを探してください。
   - これは一般的に、特定のプロジェクトやオープンソース自体に慣れていない初心者向けのイシューであることを表します！
 
 > もしこのプロジェクトが役に立つと思った場合は、ページの上部から ⭐**star ボタン**を押してください！<br>
-また、このプロジェクトを広めるために、フォロワーや知り合いに共有してください！
+> また、このプロジェクトを広めるために、フォロワーや知り合いに共有してください！
 
 <br>
 
