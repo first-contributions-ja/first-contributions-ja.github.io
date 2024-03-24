@@ -1,4 +1,4 @@
-> ⚠️ 注意：<br>
+> [!IMPORTANT]
 > このガイドは、オープンソースプロジェクトへの初めての貢献を体験する[チュートリアル](https://github.com/first-contributions-ja/first-contributions-ja.github.io/tree/docs/%238_update_docs?tab=readme-ov-file#参加方法)ではありません。<br>
 > チュートリアルを完了し、より多くの貢献をしたい方や、メンテナー向けに書かれたガイドです！
 
@@ -7,7 +7,7 @@
 first-contributions-ja への貢献（コントリビューション）を始めるには、下記のガイドを参照してください。
 
 このプロジェクトをより良いものにしていくために、<br>
-様々な開発者とコラボレーションしながら、１つでも多くのコミットを積み上げることが楽しみです！ 👋
+様々な開発者とコラボレーションしながら、1 つでも多くのコミットを積み上げることが楽しみです！ 👋
 
 <br>
 
@@ -120,15 +120,16 @@ Issue には、用意されたテンプレートを利用できます！
 
 命名規則は、次のとおりです：
 
-- `prefix/#issue番号_簡潔な作業内容`
-- 例: `docs/#01_create_documents`
+- `prefix/#issue番号-簡潔な作業内容`
+  - 例: `docs/#01-create-documents`
+- 単語の区切りには 「-」を使いましょう。
 - `prefix`に関しては、コミットメッセージの`prefix`を参考
 
 手順はこちら：
 
-- `git branch docs/#17_test`
+- `git branch docs/#17-test`
 - `git branch`でブランチが作成されたか確認する
-- `git checkout docs/#17_test`として branch に移動
+- `git checkout docs/#17-test`として branch に移動
 - `git status`で branch に移動したことを確認
 
 ### Pull Request
