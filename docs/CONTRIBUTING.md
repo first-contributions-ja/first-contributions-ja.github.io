@@ -1,139 +1,154 @@
-# コントリビューションガイド
+> [!IMPORTANT]
+> このガイドは、オープンソースプロジェクトへの初めての貢献を体験する[チュートリアル](https://github.com/first-contributions-ja/first-contributions-ja.github.io/tree/docs/%238_update_docs?tab=readme-ov-file#参加方法)ではありません。<br>
+> チュートリアルを完了し、より多くの貢献をしたい方や、メンテナー向けに書かれたガイドです！
 
-## GitHub機能の役割
+# first-contributions-ja への貢献ガイド
 
-- Discussions: 疑問やアイデアなど、このプロジェクトの開発に関する議論を扱う
-- Issues: 機能追加やバグ修正に関する問題を扱う
-- Discord（メンバー用）: そもそものGithubの使い方・OSSの作法などを中心に、あとで見返さなくてもいいようなカジュアルな内容を扱う
+first-contributions-ja への貢献（コントリビューション）を始めるには、下記のガイドを参照してください。
 
+このプロジェクトをより良いものにしていくために、<br>
+様々な開発者とコラボレーションしながら、1 つでも多くのコミットを積み上げることが楽しみです！ 👋
 
-## 基本的な開発方法
+<br>
 
-1. 作業するIssueに自分をアサインする（「これやります」といった宣言）
-1. リポジトリをクローンする
-1. 作業用ブランチを作成
-1. 変更を加える
-1. 変更をコミット
-1. 変更をプッシュ
-1. mainブランチへのプルリクエスト（PR）を作成
-1. レビューとフィードバックに対応
-1. mainブランチにマージされる
+## 目次
 
+- [first-contributions-ja について](#first-contributions-ja-について)
+- [どんな貢献をすればいいですか？](#どんな貢献をすればいいですか)
+- [開発の流れ](#開発の流れ)
+- [スタイルガイドライン](#スタイルガイドライン)
+  - [Commit Message](#commit-message)
+  - [Branch](#branch)
+  - [Pull Request](#pull-request)
 
-### 1. 作業するIssueに自分をアサインする
+<br>
 
-- Issue個別ページ右側にある`Assignees`でアサインする
+## first-contributions-ja について
 
-### 2. リポジトリをクローンする
+このプロジェクトは、主に Git/Github の学習を始めたばかりの方や、初めてオープンソースプロジェクトに貢献したい方を対象としています。
 
-- [こちら](https://github.com/first-contributions-ja/first-contributions-ja)を開く
-- 緑色のCodeボタンをクリックし、GitHub CLIのタブを選択
-- ターミナルで実行
+なので、ポップな Web サイトと、明確なチュートリアル、そして初心者に対して協力的なコミュニティが必要です。
 
-### 3. 作業用ブランチを作成
+チュートリアルを、より分かりやすくするアイデアはありますか？<br>
+Web サイトには、どのような機能・コンテンツが必要でしょうか？
 
-- `git branch docs/#17_test`
-- `git branch`でブランチが作成されたか確認する
-- `git checkout docs/#17_test`としてbranchに移動
-- `git status`でbranchに移動したことを確認
+全てのコントリビューターを、スキルレベルに関係なく、オープンソースに貢献したい 1 人の開発者として歓迎します 🙌
 
-### 4. 変更を加える
+協力的で楽しい環境を維持するために、<br>
+まず、会話から始めましょう！
 
-必要なファイルに変更を加えます
+- [Issues](https://github.com/first-contributions-ja/first-contributions-ja.github.io/issues): 機能追加やバグ修正に関する問題（タスク）を扱う場所
+- [Discussions](https://github.com/first-contributions-ja/first-contributions-ja.github.io/discussions): チュートリアルのサポート、このプロジェクトに関するメモ、疑問やアイデアの共有などカジュアルな議論を行う場所
 
-### 5. 変更をコミット
+<br>
 
-- `git add .`
-- `git commit -m "docs: テストを追加 #17"`
+## どんな貢献をすればいいですか？
 
-### 6. 変更をプッシュ
+このプロジェクトに貢献する方法はいくつかあります。
 
-- `git push origin <branch名>` もしくは `git push origin head` でプッシュ
+- Issue を開いて、次のような報告をする：
+  - コードの修正、ドキュメンテーションの改善、バグ報告
+- Issue を開いて、次のような提案をする：
+  - 新機能、ドキュメントに対する新しい項目の追加
+- 未解決の Issue に着手する
 
-### 7. mainブランチへのプルリクエスト（PR）を作成
-- プルリクエストの作成
-  - リポジトリのCodeページ上部の黄色く表示された部分から
-  - リポジトリのCodeページ > ブランチ > 該当ブランチ > Contribute > Open pull requestから
-- テンプレートに沿ってtitle、descriptionをうめる
-- Create pull requestボタンでプルリクを作成する
+Issue には、用意されたテンプレートを利用できます！
 
-### 8. レビューとフィードバックに対応
+<br>
 
-- 誰かをレビュワーにアサインする
-- 誰かがレビューをする
-- 修正があれば対応する
+## 開発の流れ
 
-### 9. mainブランチにマージされる
+実際に開発に参加する流れは、以下の通りです！
 
-- レビューした人が Marge pull requestをして、mainブランチにマージされる
+基本的には、[チュートリアル](https://github.com/first-contributions-ja/first-contributions-ja.github.io/tree/docs/%238_update_docs?tab=readme-ov-file#参加方法)の流れと同じですが、<br>
+「作業する Issue を見つける」項目が追加されていることに注意してください 📝
 
-### 10. 最新のmainブランチを取得、反映
+- Step 0: **作業する Issue を見つける**
+- Step 1: このリポジトリをフォーク
+- Step 2: ローカルマシンへクローン
+- Step 3: 作業用ブランチを作成
+- Step 4: 変更を加える
+- Step 5: 変更をコミット
+- Step 6: 変更をプッシュ
+- Step 7: プルリクエスト（PR）を作成
+- Step 8: レビューとフィードバックに対応
+- Finish: 🎉
 
-- `git checkout main` でmainブランチに移動
-- `git status`で状況を把握
-- `git pull origin main`
-- ref: [リモートリポジトリから変更を取得する - GitHub Docs](https://docs.github.com/ja/get-started/using-git/getting-changes-from-a-remote-repository)
+### Step 0: 作業する Issue を見つける
 
-## Discussions
+チュートリアルでは、以下のタスクを行いました：
 
-- **作成ルール**
-  - 同様の議論がないか確認
-  - なければ新しくDiscussionを作成
-- **カテゴリー**
-  - `General`: カテゴリー不明、未分類の内容
-  - `Ideas`: 新機能を提案する
-  - `Polls`: 多数決や投票をする
-  - `Q&A`: 技術面について不明なことを相談する
-- **テンプレート**
-  - 基本的になし
-  - `Q&A` はなるべく具体的に困っている内容、試したこと、どうなって欲しいのかを記述する（できればで可）
-- **DiscussionsのIssue化**
-  - 新機能追加が確定したり、バグについての話題が上がった場合は、Discussionsの内容をもとにIssueを立て、タスク化する
-  - issue化したらcloseする
+> このプロジェクトの参加者として、Contributors.json ファイルに必要な情報を入力し、プロフィールカードを作成
 
+**同じように、まず初めに取り組むべき Issue を見つけます。**
 
-## Issues
+その際、次のことに注意してください：
 
-- **作成ルール**
-  - 基本的にDiscussionやDiscordで決まった新機能や、バグについてのみIssueを立てる
-- **作成手順**
-  - テンプレートに沿って内容を作成
-    - [テンプレート](https://github.com/first-contributions-ja/first-contributions-ja.github.io/blob/main/.github/ISSUE_TEMPLATE/%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88.md?plain=1)
-    - ~~[バグ修正用テンプレート]()~~ 必要があれば後日作成する
-- **Closeについて**
-  - Issueに伴うブランチがマージされたらcloseすること（Pull Requestのコメントでcloseする）
+- `Assignees`が設定されている場合、そのタスクは既に他の開発者に割り当てられています。
+- もし、`Assignees`に誰も割り当てられていない場合は、Issue 内にコメントをして、割り当てられてからタスクに着手してください。
+- これによって、特定の Issue に取り組んでいる人が明確になり、複数人が同じ作業を行なってしまうことを防げます。
 
+<br>
 
-## Pull Request
-- **作成ルール**
-  - 基本的にIssueに対してブランチを作成し、プルリクエストを行う
-- **作成手順**
-  - プルリクエスト作成画面のURL末尾に以下を追加する
-    ```markdown
-    ?quick_pull=1&template=pr.md
-    ```
-  - プルリク画面URL
-    - `https://github.com/first-contributions-ja/first-contributions-ja.github.io/compare/main...branchname`
-  - テンプレートを追加したURL
-    - `https://github.com/first-contributions-ja/first-contributions-ja.github.io/compare/main...branchname?quick_pull=1&template=pr.md`
+## スタイルガイドライン
 
+基本的には、以下のスタイルガイドラインに合わせてください！<br>
+そこまで厳格ではないですよ 🎨
 
-## Branch
+### Commit Message
 
-- 命名規則
-  - 基本: `prefix/#issue番号_タイトル`
-  - 例: `docs/#01_create_documents`
-- prefix
-  - コミットメッセージのprefixを参考
+命名規則は、次のとおりです：
 
-## コミットメッセージ
-
-- 命名規則
-  - 基本: `絵文字 prefix: 内容 #issue番号`
-  - 例: `📚 docs: README.md 日本語訳追加 #12`
-- 絵文字/prefix
+- 基本: `絵文字 prefix: 内容 #issue番号`
+- 例: `📚 docs: README.md 日本語訳追加 #12`
+- prefix に対応した絵文字
   - `✨ feat`: 新機能追加関連
   - `📚 docs`: ドキュメントの追加・修正・削除
   - `🐛 fix`: 機能やバグに関する修正
   - `🎨 style`: スタイル関連
+  - `🔧 chore`: 雑事、カテゴライズする必要のないもの
   - その他は必要に応じて適宜追加
+
+手順はこちら：
+
+- `git add .`
+- `git commit -m "📚 docs: README.md 日本語訳追加 #12"`
+
+### Branch
+
+ブランチ名は、あなたがこれから行う作業に関連した意味のある名前を付けます。
+
+命名規則は、次のとおりです：
+
+- `prefix/#issue番号-簡潔な作業内容`
+  - 例: `docs/#01-create-documents`
+- 単語の区切りには 「-」を使いましょう。
+- `prefix`に関しては、コミットメッセージの`prefix`を参考
+
+手順はこちら：
+
+- `git branch docs/#17-test`
+- `git branch`でブランチが作成されたか確認する
+- `git checkout docs/#17-test`として branch に移動
+- `git status`で branch に移動したことを確認
+
+### Pull Request
+
+- **作成ルール**
+  - 基本的に Issue に対してブランチを作成し、プルリクエストを行う
+- **作成手順**
+  - プルリクエスト作成画面の URL 末尾に、以下の URL を追加することで、テンプレートを利用できます
+    ```markdown
+    ?quick_pull=1&template=pr.md
+    ```
+  - プルリク画面 URL
+    - `https://github.com/first-contributions-ja/first-contributions-ja.github.io/compare/main...branchname`
+  - テンプレートを追加した URL
+    - `https://github.com/first-contributions-ja/first-contributions-ja.github.io/compare/main...branchname?quick_pull=1&template=pr.md`
+
+### 最新の main ブランチを取得、反映
+
+- `git checkout main` で main ブランチに移動
+- `git status`で状況を把握
+- `git pull origin main`
+- ref: [リモートリポジトリから変更を取得する - GitHub Docs](https://docs.github.com/ja/get-started/using-git/getting-changes-from-a-remote-repository)
