@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { SITE_NAME, SITE_URL, SITE_DESC } from "../../lib/constants";
 import { Inter, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer";
-import { SITE_NAME, SITE_URL, SITE_DESC } from "../../lib/constants";
+import Header from "@/components/header";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -42,8 +43,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${inter.variable} ${notojp.variable}`}>
-        <header>ヘッダー</header>
+      <body className={`${inter.variable} ${notojp.variable} `}>
+        <Header />
         {children}
         <Footer />
       </body>
