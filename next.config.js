@@ -6,9 +6,6 @@ const nextConfig = {
 module.exports = {
   ...nextConfig,
   experimental: {
-    optimizePackageImports: [
-      '@mui/icons-material',
-      '@mui/material'
-    ],
+    optimizePackageImports: ["@mui/icons-material", "@mui/material"],
   },
 };
