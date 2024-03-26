@@ -47,7 +47,7 @@
 
 ### どんな貢献をすればいいの？
 
-> このプロジェクトの参加者として、Contributors.json ファイルに必要な情報を入力し、プロフィールカードを作成します！
+> このプロジェクトの参加者として、Contributors.json ファイルに必要な情報を入力し、プロフィールを作成します！
 
 記載する情報は、以下のとおりです：
 
@@ -55,7 +55,8 @@
 "name": "あなたのハンドルネーム",
 "github": "あなたのGitHubアカウントのURL",
 "favoriteStack": "あなたの好きなプログラミング言語・技術スタック",
-"introduction": "自己紹介・挨拶"
+"favoriteColor": "あなたの好きなカラーコード",
+"favoriteEmoji": "あなたの好きな絵文字"
 ```
 
 これから行うチュートリアルは、次の９つのステップで完了します！<br>
@@ -152,9 +153,10 @@ GitHub 上でファイルを編集することも可能ですが、<br>
   ```
   {
     "name": "あなたのハンドルネーム",
-    "github": "あなたのGithubアカウントのURL",
-    "favoriteStack": "好きなプログラミング言語・技術スタックを１つ",
-    "introduction": "自己紹介・挨拶"
+    "github": "あなたのGitHubアカウントのURL",
+    "favoriteStack": "あなたの好きなプログラミング言語・技術スタック",
+    "favoriteColor": "あなたの好きなカラーコード",
+    "favoriteEmoji": "あなたの好きな絵文字",
   },
   ```
 - そして、貼り付けたテキストの中身を、あなた独自の内容に置き換えます。
@@ -165,8 +167,9 @@ GitHub 上でファイルを編集することも可能ですが、<br>
     {
       "name": "oginochihiro",
       "github": "https://github.com/first-contributions-ja",
-      "favoriteStack": "Github",
-      "introduction": "ここで働かせて下さい！"
+      "favoriteStack": "GitHub",
+      "favoriteColor": "#ffffff",
+      "favoriteEmoji": "🐉"
     },
     {
      〜〜
