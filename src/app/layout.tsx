@@ -43,7 +43,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${inter.variable} ${notojp.variable} `}>
+      <body
+        className={`${inter.variable} ${notojp.variable} bg-stone-100 text-stone-800`}
+      >
         <Header />
         {children}
         <Footer />
