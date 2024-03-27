@@ -1,18 +1,23 @@
-[![Deploy Next.js site to Pages](https://github.com/first-contributions-ja/first-contributions-ja.github.io/actions/workflows/nextjs.yml/badge.svg)](https://github.com/first-contributions-ja/first-contributions-ja.github.io/actions/workflows/nextjs.yml)
-![Static Badge](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat)
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-<img src="https://img.shields.io/badge/license-MIT-blue.svg">
-<img src="https://img.shields.io/badge/contributions-welcome-blue.svg?style=flat">
-[![Static Badge](https://img.shields.io/badge/first_contributions-%F0%9F%94%B0-white?style=flat)](https://github.com/topics/first-contributions)
+<p align="center">
+  <img src="/docs/images/img-readme-header.png">
+</p>
+<p align="left">
+  <img src="https://github.com/first-contributions-ja/first-contributions-ja.github.io/actions/workflows/nextjs.yml/badge.svg" alt="Deploy Next.js site to Pages">
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat" alt="Static Badge">
+  <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" alt="Open Source Love">
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License MIT">
+  <img src="https://img.shields.io/badge/contributions-welcome-blue.svg?style=flat" alt="Contributions Welcome">
+  <img src="https://img.shields.io/badge/first_contributions-%F0%9F%94%B0-white?style=flat" alt="Static Badge">
+</p>
 
-# First Contributions JA
+[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)][twttr-share]
 
 > 完全日本語のチュートリアルで、OSS 活動を始める 🚀
 
 初心者でも簡単に参加できるように設計された、日本語のオープンソースプロジェクトです。<br>
 チュートリアルに沿って、初めての貢献（コントリビュート）を体験してください！
 
-あなたの最初のプルリクエストを喜んでお手伝いします ✌️
+あなたの最初のプルリクエストを、喜んでお手伝いします ✌️
 
 <br>
 
@@ -262,3 +267,5 @@ GitHub 上でファイルを編集することも可能ですが、<br>
 
 このプロジェクトは、[first-contributions](https://github.com/firstcontributions/first-contributions)や[Contribute-To-This-Project](https://github.com/Syknapse/Contribute-To-This-Project)などの、<br>
 初心者向けに設計された素晴らしいオープンソースプロジェクトから影響を受けています。
+
+[twttr-share]: https://twitter.com/intent/tweet?text=完全日本語のチュートリアルで、OSS活動を始める🚀&url=https://github.com/first-contributions-ja/first-contributions-ja.github.io&hashtags=プログラミング 'Tweet this project'
