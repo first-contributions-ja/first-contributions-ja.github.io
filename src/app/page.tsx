@@ -69,66 +69,64 @@ export default function Home() {
           <h2 className="rounded-sm bg-red-600 p-4 text-center text-xl font-bold tracking-tighter text-white md:bg-transparent md:pt-10 md:text-3xl md:text-red-600">
             簡単 8 ステップでコントリビューション！
           </h2>
-          <div className="mx-auto max-w-2xl max-w-md md:flex md:max-w-4xl md:items-center md:justify-center md:gap-10">
-            <ul className="mb-6 mt-8 list-inside px-2 font-bold leading-[2.8rem] md:mb-8 md:mt-10 md:text-xl md:leading-loose">
-              <li>
-                <Filter1RoundedIcon
-                  fontSize="medium"
-                  className="mr-3 text-red-600"
-                />
-                プロジェクトをフォーク
-              </li>
-              <li>
-                <Filter2RoundedIcon
-                  fontSize="medium"
-                  className="mr-3 text-red-600"
-                />
-                ローカルマシンへクローン
-              </li>
-              <li>
-                <Filter3RoundedIcon
-                  fontSize="medium"
-                  className="mr-3 text-red-600"
-                />
-                作業用ブランチを作成
-              </li>
-              <li>
-                <Filter4RoundedIcon
-                  fontSize="medium"
-                  className="mr-3 text-red-600"
-                />
-                変更を加える
-              </li>
-              <li>
-                <Filter5RoundedIcon
-                  fontSize="medium"
-                  className="mr-3 text-red-600"
-                />
-                変更をコミット
-              </li>
-              <li>
-                <Filter6RoundedIcon
-                  fontSize="medium"
-                  className="mr-3 text-red-600"
-                />
-                変更をプッシュ
-              </li>
-              <li>
-                <Filter7RoundedIcon
-                  fontSize="medium"
-                  className="mr-3 text-red-600"
-                />
-                プルリクエストを作成
-              </li>
-              <li>
-                <Filter8RoundedIcon
-                  fontSize="medium"
-                  className="mr-3 text-red-600"
-                />
-                レビューとフィードバックに対応
-              </li>
-            </ul>
-          </div>
+          <ul className="mx-auto w-fit mb-6 mt-8 px-2 list-inside font-bold leading-[2.8rem] md:mb-8 md:mt-10 md:text-xl md:leading-loose">
+            <li>
+              <Filter1RoundedIcon
+                fontSize="medium"
+                className="mr-3 text-red-600"
+              />
+              プロジェクトをフォーク
+            </li>
+            <li>
+              <Filter2RoundedIcon
+                fontSize="medium"
+                className="mr-3 text-red-600"
+              />
+              ローカルマシンへクローン
+            </li>
+            <li>
+              <Filter3RoundedIcon
+                fontSize="medium"
+                className="mr-3 text-red-600"
+              />
+              作業用ブランチを作成
+            </li>
+            <li>
+              <Filter4RoundedIcon
+                fontSize="medium"
+                className="mr-3 text-red-600"
+              />
+              変更を加える
+            </li>
+            <li>
+              <Filter5RoundedIcon
+                fontSize="medium"
+                className="mr-3 text-red-600"
+              />
+              変更をコミット
+            </li>
+            <li>
+              <Filter6RoundedIcon
+                fontSize="medium"
+                className="mr-3 text-red-600"
+              />
+              変更をプッシュ
+            </li>
+            <li>
+              <Filter7RoundedIcon
+                fontSize="medium"
+                className="mr-3 text-red-600"
+              />
+              プルリクエストを作成
+            </li>
+            <li>
+              <Filter8RoundedIcon
+                fontSize="medium"
+                className="mr-3 text-red-600"
+              />
+              レビューとフィードバックに対応
+            </li>
+          </ul>
           <div className="mb-8 text-center font-bold leading-7 md:mb-16 md:text-xl md:leading-loose">
             <KeyboardDoubleArrowDownRoundedIcon className="mb-4 text-6xl text-red-600 md:mb-8" />
             <p>プルリクエストが承認され、マージされると……</p>
