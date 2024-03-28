@@ -12,8 +12,6 @@ import Filter6RoundedIcon from "@mui/icons-material/Filter6Rounded";
 import Filter7RoundedIcon from "@mui/icons-material/Filter7Rounded";
 import Filter8RoundedIcon from "@mui/icons-material/Filter8Rounded";
 import KeyboardDoubleArrowDownRoundedIcon from "@mui/icons-material/KeyboardDoubleArrowDownRounded";
-import BuildRoundedIcon from "@mui/icons-material/BuildRounded";
-import AutoAwesomeRoundedIcon from "@mui/icons-material/AutoAwesomeRounded";
 
 export default function Home() {
   return (
@@ -130,19 +128,6 @@ export default function Home() {
                 レビューとフィードバックに対応
               </li>
             </ul>
-            {/* // octocatの代わりにならなそうなアイコン */}
-            {/* <div className="hidden lg:inline-block ">
-              <BuildRoundedIcon className="text-[120px] mb-4 text-red-600" />
-              <AutoAwesomeRoundedIcon className="text-[120px] mb-4 text-yellow-300" />
-            </div> */}
-            <div className="hidden lg:inline-block lg:flex-[0.4]">
-              <img
-                src={`${BASE_PATH}/octocat.png`}
-                alt="octocat"
-                className="scale-x-[-1] transform"
-              // width="200"
-              />
-            </div>
           </div>
           <div className="mb-8 text-center font-bold leading-7 md:mb-16 md:text-xl md:leading-loose">
             <KeyboardDoubleArrowDownRoundedIcon className="mb-4 text-6xl text-red-600 md:mb-8" />
