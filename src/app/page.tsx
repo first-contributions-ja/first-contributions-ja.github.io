@@ -18,8 +18,8 @@ import AutoAwesomeRoundedIcon from "@mui/icons-material/AutoAwesomeRounded";
 export default function Home() {
   return (
     <>
-      <section className=" mx-auto max-w-2xl px-6 lg:flex lg:h-screen lg:max-w-7xl lg:items-center lg:justify-center lg:gap-10">
-        <div className="mt-[80px] lg:mt-[100px] lg:flex-1">
+      <section className=" mx-auto mt-20 lg:mt-4 lg:-mb-4 max-w-2xl px-6 lg:flex lg:h-screen lg:max-w-7xl lg:items-center  lg:gap-10">
+        <div className="lg:flex-1">
           <p className="hidden bg-stone-200 px-4 py-2 lg:inline-block">
             <span className="text-2xl font-bold text-red-600">1234</span>
             人が参加中！
@@ -133,7 +133,7 @@ export default function Home() {
                 src={`${BASE_PATH}/octocat.png`}
                 alt="octocat"
                 className="scale-x-[-1] transform"
-                // width="200"
+              // width="200"
               />
             </div>
           </div>
