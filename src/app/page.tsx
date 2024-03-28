@@ -3,14 +3,6 @@ import { basePath } from "../../next.config";
 export const BASE_PATH = basePath ? basePath : "";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { SITE_NAME } from "../../lib/constants";
-import Filter1RoundedIcon from "@mui/icons-material/Filter1Rounded";
-import Filter2RoundedIcon from "@mui/icons-material/Filter2Rounded";
-import Filter3RoundedIcon from "@mui/icons-material/Filter3Rounded";
-import Filter4RoundedIcon from "@mui/icons-material/Filter4Rounded";
-import Filter5RoundedIcon from "@mui/icons-material/Filter5Rounded";
-import Filter6RoundedIcon from "@mui/icons-material/Filter6Rounded";
-import Filter7RoundedIcon from "@mui/icons-material/Filter7Rounded";
-import Filter8RoundedIcon from "@mui/icons-material/Filter8Rounded";
 import KeyboardDoubleArrowDownRoundedIcon from "@mui/icons-material/KeyboardDoubleArrowDownRounded";
 
 export default function Home() {
@@ -64,78 +56,58 @@ export default function Home() {
         </p>
       </section>
 
-      <section className=" pb-2 md:bg-red-600 md:p-10 md:pb-0">
-        <div className="rounded-xl bg-stone-100 px-5 pb-10 md:p-20 md:pt-8">
-          <h2 className="rounded-sm bg-red-600 p-4 text-center text-xl font-bold tracking-tighter text-white md:bg-transparent md:pt-10 md:text-3xl md:text-red-600">
-            簡単 8 ステップでコントリビューション！
+      <section className="bg-red-600 p-6 pt-8  pb-0 md:px-10 md:pt-10">
+        <div className="rounded-md bg-stone-100 px-5 pt-12 pb-16 md:p-20 md:pt-8">
+          <h2 className="text-center text-xl font-bold tracking-tighter md:pt-12 md:pb-4 md:text-3xl text-red-600">
+            簡単 8 STEP でコントリビューション！
           </h2>
-          <ul className="mx-auto w-fit mb-6 mt-8 px-2 list-inside font-bold leading-[2.8rem] md:mb-8 md:mt-10 md:text-xl md:leading-loose">
-            <li>
-              <Filter1RoundedIcon
-                fontSize="medium"
-                className="mr-3 text-red-600"
-              />
-              プロジェクトをフォーク
-            </li>
-            <li>
-              <Filter2RoundedIcon
-                fontSize="medium"
-                className="mr-3 text-red-600"
-              />
-              ローカルマシンへクローン
-            </li>
-            <li>
-              <Filter3RoundedIcon
-                fontSize="medium"
-                className="mr-3 text-red-600"
-              />
-              作業用ブランチを作成
-            </li>
-            <li>
-              <Filter4RoundedIcon
-                fontSize="medium"
-                className="mr-3 text-red-600"
-              />
-              変更を加える
-            </li>
-            <li>
-              <Filter5RoundedIcon
-                fontSize="medium"
-                className="mr-3 text-red-600"
-              />
-              変更をコミット
-            </li>
-            <li>
-              <Filter6RoundedIcon
-                fontSize="medium"
-                className="mr-3 text-red-600"
-              />
-              変更をプッシュ
-            </li>
-            <li>
-              <Filter7RoundedIcon
-                fontSize="medium"
-                className="mr-3 text-red-600"
-              />
-              プルリクエストを作成
-            </li>
-            <li>
-              <Filter8RoundedIcon
-                fontSize="medium"
-                className="mr-3 text-red-600"
-              />
-              レビューとフィードバックに対応
-            </li>
+          <ul className="rounded-md lg:bg-stone-200 lg:px-12 lg:pt-8 lg:pb-4 lg:flex lg:gap-16 mx-auto w-fit mt-8 px-2 list-inside font-bold lg:mb-8 lg:mt-10 text-lg md:text-xl md:leading-loose">
+            <div>
+              <li className="pb-4">
+                <p className="mr-6 text-red-600 text-sm md:text-lg">STEP 1</p>
+                プロジェクトをフォーク
+              </li>
+              <li className="pb-4">
+                <p className="mr-6 text-red-600 text-sm md:text-lg">STEP 2</p>
+                ローカルマシンへクローン
+              </li>
+              <li className="pb-4">
+                <p className="mr-6 text-red-600 text-sm md:text-lg">STEP 3</p>
+                作業用ブランチを作成
+              </li>
+              <li className="pb-4">
+                <p className="mr-6 text-red-600 text-sm md:text-lg">STEP 4</p>
+                変更を加える
+              </li>
+            </div>
+            <div>
+              <li className="pb-4">
+                <p className="mr-6 text-red-600 text-sm md:text-lg">STEP 5</p>
+                変更をコミット
+              </li>
+              <li className="pb-4">
+                <p className="mr-6 text-red-600 text-sm md:text-lg">STEP 6</p>
+                変更をプッシュ
+              </li>
+              <li className="pb-4">
+                <p className="mr-6 text-red-600 text-sm md:text-lg">STEP 7</p>
+                プルリクエストを作成
+              </li>
+              <li className="pb-4">
+                <p className="mr-6 text-red-600 text-sm md:text-lg">STEP 8</p>
+                レビューとフィードバックに対応
+              </li>
+            </div>
           </ul>
-          <div className="mb-8 text-center font-bold leading-7 md:mb-16 md:text-xl md:leading-loose">
-            <KeyboardDoubleArrowDownRoundedIcon className="mb-4 text-6xl text-red-600 md:mb-8" />
-            <p>プルリクエストが承認され、マージされると……</p>
+          <div className="mb-8 text-center font-bold leading-7 md:text-xl md:leading-loose">
+            <KeyboardDoubleArrowDownRoundedIcon className="mb-4 text-6xl text-red-600" />
+            <p>プルリクエストが承認されると</p>
             <p>あなたの変更がメインプロジェクトに反映されます 🎉</p>
           </div>
           <div className="text-center">
             <a
               href="https://github.com/first-contributions-ja/first-contributions-ja.github.io"
-              className="rounded-xl bg-red-600 px-5 py-4 text-white transition hover:opacity-70 md:text-lg"
+              className="rounded-md bg-red-600 px-5 py-4 text-white transition hover:opacity-70 lg:text-lg"
             >
               <GitHubIcon fontSize="large" className="mr-3 -translate-y-0.5" />
               詳しい手順はこちら
