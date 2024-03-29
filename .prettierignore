@@ -2,3 +2,6 @@
 .next
 docs
 .github
+
+# Ignore all markdown files:
+**/*.md
