@@ -64,7 +64,7 @@
 "favoriteEmoji": "あなたの好きな絵文字"
 ```
 
-これから行うチュートリアルは、次の９つのステップで完了します！<br>
+これから行うチュートリアルは、次の 8 つのステップで完了します！<br>
 実際に手を動かしてみてください :octocat:
 
 - [実際に手を動かす](#実際に手を動かす)
@@ -83,7 +83,7 @@
 
 ## 実際に手を動かす
 
-> 9 つの簡単なステップで、オープンソースのコントリビューターになる :sunglasses:
+> 8 つの簡単なステップで、オープンソースのコントリビューターになる :sunglasses:
 
 - もし助けが必要な場合、[Discussions](https://github.com/first-contributions-ja/first-contributions-ja.github.io/discussions)で質問してください！
 - このプロジェクトに関する改善点を見つけた場合は、[Issues](https://github.com/first-contributions-ja/first-contributions-ja.github.io/issues)から報告してください！
