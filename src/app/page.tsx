@@ -4,14 +4,19 @@ export const BASE_PATH = basePath ? basePath : "";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { SITE_NAME } from "../../lib/constants";
 import KeyboardDoubleArrowDownSharpIcon from "@mui/icons-material/KeyboardDoubleArrowDownSharp";
+import contributors from "../../Contributors.json";
 
 export default function Home() {
+  const contributorsNumber = contributors.length;
+
   return (
     <>
       <section className="mx-auto mt-20 max-w-2xl px-6 lg:-mb-4 lg:mt-4 lg:flex lg:h-screen lg:max-w-7xl lg:items-center  lg:gap-10">
         <div className="lg:flex-1">
           <p className="hidden bg-stone-100 px-4 py-2 lg:inline-block">
-            <span className="text-2xl font-bold text-red-600">1234</span>
+            <span className="text-2xl font-bold text-red-600">
+              {contributorsNumber}
+            </span>
             人が参加中！
           </p>
           <div className="my-8 w-full lg:hidden">
@@ -51,7 +56,9 @@ export default function Home() {
           />
         </div>
         <p className="mx-auto mb-10 mt-5 rounded-sm bg-stone-100 px-4 py-2 text-center lg:hidden">
-          <span className="text-2xl font-bold text-red-600">1234</span>
+          <span className="text-2xl font-bold text-red-600">
+            {contributorsNumber}
+          </span>
           人が参加中！
         </p>
       </section>
