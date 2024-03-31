@@ -1,5 +1,12 @@
 [
   {
+    "name": "Aileen",
+    "github": "https://github.com/pss-aileen",
+    "favoriteStack": "Vanilla JavaScript",
+    "favoriteColor": "#25b7c0",
+    "favoriteEmoji": "🫧"
+  },
+  {
   "name": "kagome",
   "github": "https://github.com/kagomen",
   "favoriteStack": "Tailwind CSS",
