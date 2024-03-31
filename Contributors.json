@@ -1,5 +1,12 @@
 [
   {
+  "name": "kagome",
+  "github": "https://github.com/kagomen",
+  "favoriteStack": "Tailwind CSS",
+  "favoriteColor": "あなたの好きなカラーコード",
+  "favoriteEmoji": "🌀"
+  },
+  {
     "name": "kazzyfrog",
     "github": "https://github.com/kazzyfrog",
     "favoriteStack": "Next.js",
