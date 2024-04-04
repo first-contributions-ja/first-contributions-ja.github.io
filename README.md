@@ -128,7 +128,7 @@ GitHub 上でファイルを編集することも可能ですが、<br>
 より一般的なワークフローを体験するため、フォークしたリポジトリをあなたのローカルマシンにコピーします。
 
 - GitHub 上の、フォークしたリポジトリのページに移動し、緑色の "Code" ボタンをクリックし、HTTPS の URL をコピーします。
-  - URL は、次のようになっているはずです；`https://github.com/<あなたのアカウント名>/first-contributions-ja.github.io.git`
+  - URL は、次のようになっているはずです：`https://github.com/<あなたのアカウント名>/first-contributions-ja.github.io.git`
 - ターミナルを開き、リポジトリをクローンするディレクトリに移動します。
   - 例えば、クローン先をデスクトップに指定する場合、以下のコマンドを使用できます。
   ```
@@ -231,7 +231,7 @@ GitHub 上でファイルを編集することも可能ですが、<br>
 
 ### Step 7:プルリクエスト（PR）を作成
 
-- GitHub 上の、フォークしたリモートリポジトリのページ（`https://github.com/あなたのアカウント/first-contributions-ja`）に移動します。
+- GitHub 上の、フォークしたリモートリポジトリのページ（`https://github.com/あなたのアカウント/first-contributions-ja.github.io`）に移動します。
 - 上部に表示されている"Compare & pull request" ボタンをクリックします。
 - そして、以下のことを確認したら、"Create pull request" ボタンをクリックします。
   - 念のため、あなたのリポジトリの`add-yourname`ブランチから、first-contributions-jsの`main`ブランチに向かっていることを確認してください！
