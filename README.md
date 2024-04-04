@@ -63,7 +63,7 @@
 
 ### 何をすればいいの？
 
-**このプロジェクトの参加者として、Contributors.json ファイルに必要な情報を入力し、プロフィールを作成します！**
+> **このプロジェクトの参加者として、Contributors.json ファイルに必要な情報を入力し、プロフィールを作成します！**
 
 記載する情報は、以下のとおりです：
 
@@ -94,7 +94,7 @@
 
 ## 実際に手を動かす
 
-**8 つの簡単なステップで、オープンソースのコントリビューターになる** :sunglasses:
+> **8 つの簡単なステップで、オープンソースのコントリビューターになる** :sunglasses:
 
 - もし助けが必要な場合、[Discussions](https://github.com/first-contributions-ja/first-contributions-ja.github.io/discussions)で質問してください！
 - このプロジェクトに関する改善点を見つけた場合は、[Issues](https://github.com/first-contributions-ja/first-contributions-ja.github.io/issues)から報告してください！
