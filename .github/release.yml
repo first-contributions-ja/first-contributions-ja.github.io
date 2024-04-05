@@ -1,0 +1,31 @@
+# .github/release.yml
+
+changelog:
+  exclude:
+    labels:
+      - 'ignore for release'
+
+  categories:
+  
+    - title: ✨ New Features
+      labels:
+        - 'Type: ✨ feat'
+    - title: 🐛 Bug Fix
+      labels:
+        - 'Type: 🐛 fix'
+    - title: 📚 Documentation
+      labels:
+        - 'Type: 📚 docs'
+    - title: 🎨 Style
+      labels:
+        - 'Type: 🎨 style'
+    - title: ♻️ Refactoring
+      labels:
+        - 'Type: ♻️ refactor'
+    - title: 🔧 Chore
+      labels:
+        - 'Type: 🔧 chore'
+
+    - title: Other Changes
+      labels:
+        - "*"
