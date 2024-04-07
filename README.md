@@ -114,9 +114,18 @@
 
 ### Step 1:このリポジトリをフォーク
 
-- GitHub 上のプロジェクトページの右上にある "Fork" ボタンをクリックして、このリポジトリをフォークします。
+- GitHub 上のプロジェクトページ（このページ）の右上にある "Fork" ボタンをクリックして、このリポジトリをフォークします。
+
+<p align="center">
+  <img height=150px src="/docs/images/fork-button.png">
+</p>
+
 - そして、"Create fork"ボタンをクリックします。
   - 「Repository name」「Description」「Copy the `main` branch only」などの項目は、すべて初期のままでOKです！
+
+<p align="center">
+  <img height=400px src="/docs/images/create-fork-button.png">
+</p>
 
 > [!TIP]
 > これにより、あなたの GitHub アカウントに、このリポジトリのコピーが作成されます 👍
@@ -130,6 +139,11 @@ GitHub 上でファイルを編集することも可能ですが、<br>
 
 - GitHub 上の、フォークしたリポジトリのページに移動し、緑色の "Code" ボタンをクリックし、HTTPS の URL をコピーします。
   - URL は、次のようになっているはずです：`https://github.com/<あなたのアカウント名>/first-contributions-ja.github.io.git`
+
+<p align="center">
+  <img height=300px src="/docs/images/code-clone.png">
+</p>
+
 - ターミナルを開き、リポジトリをクローンするディレクトリに移動します。
   - 例えば、クローン先をデスクトップに指定する場合、以下のコマンドを使用できます。
   ```
@@ -146,6 +160,10 @@ GitHub 上でファイルを編集することも可能ですが、<br>
 ---
 
 ### Step 3:作業用ブランチを作成
+
+<p align="center">
+  <img height=80px src="/docs/images/clone-to-desktop.png">
+</p>
 
 - 次のコマンドで、リポジトリのディレクトリ内に移動します：
   ```
@@ -191,6 +209,11 @@ GitHub 上でファイルを編集することも可能ですが、<br>
     "favoriteEmoji": "あなたの好きな絵文字"
   },
   ```
+
+<p align="center">
+  <img height=300px src="/docs/images/copy-code-template.png">
+</p>
+
 - そして、貼り付けたテキストの中身を、あなた独自の内容に置き換えます。
   - :art: 次のサイトを参考にしてみてください：[絵文字一覧](https://www.webfx.com/tools/emoji-cheat-sheet/)、[原色大辞典](https://www.colordic.org)、[日本の伝統色](https://nipponcolors.com)
   - 例えば、全て置き換えたら以下のようになります：
@@ -240,9 +263,18 @@ GitHub 上でファイルを編集することも可能ですが、<br>
 
 - GitHub 上の、フォークしたリモートリポジトリのページ（`https://github.com/あなたのアカウント/first-contributions-ja.github.io`）に移動します。
 - 上部に表示されている"Compare & pull request" ボタンをクリックします。
+
+<p align="center">
+  <img height=150px src="/docs/images/compare-pull-request.png">
+</p>
+
 - そして、以下のことを確認したら、"Create pull request" ボタンをクリックします。
   - 念のため、あなたのリポジトリの`add-yourname`ブランチから、first-contributions-jsの`main`ブランチに向かっていることを確認してください！
   -  タイトルは初期入力のままで、description は空欄でOKです！
+
+<p align="center">
+  <img height=500px src="/docs/images/create-pull-request.png">
+</p>
 
 > [!TIP]
 > これにより、あなたがフォークして行った変更を、フォーク元のリポジトリに反映させるようにリクエストします 🎁
@@ -272,6 +304,10 @@ GitHub 上でファイルを編集することも可能ですが、<br>
 
 ## さらなるステップ
 
+> [!IMPORTANT]
+> もしこのプロジェクトが役に立つと思った場合は、ページの上部から ⭐**star ボタン**を押してください！<br>
+> また、このプロジェクトを広めるために、**フォロワーや知り合いに共有**してください！
+
 あなたは、オープンソースのプロジェクトに貢献する方法を学びました！
 
 - 行った作業を振り返って、知識を定着させてください。
@@ -283,10 +319,6 @@ GitHub 上でファイルを編集することも可能ですが、<br>
   - GitHub 上の初心者向けのトピック([first-contributions](https://github.com/topics/first-contributions)や[good-first-issue](https://github.com/topics/good-first-issue)）をチェックしてみてください！
   - 貢献したいリポジトリがあれば、「**good first issue**」というラベルのついたイシューを探してください。
   - これは一般的に、特定のプロジェクトやオープンソース自体に慣れていない初心者向けのイシューであることを表します！
-
-> [!IMPORTANT]
-> もしこのプロジェクトが役に立つと思った場合は、ページの上部から ⭐**star ボタン**を押してください！<br>
-> また、このプロジェクトを広めるために、**フォロワーや知り合いに共有**してください！
 
 <br>
 
