@@ -100,19 +100,19 @@ Issue には、用意されたテンプレートを利用できます！
 命名規則は、次のとおりです：
 
 - 基本: `絵文字 prefix: 内容 #issue番号`
-- 例: `📚 docs: README.md 日本語訳追加 #12`
+- 例: `📚 docs: README.mdに日本語訳を追加 #12`
 - prefix に対応した絵文字
-  - `✨ feat`: 新機能追加関連
+  - `✨ feat`: 新機能の追加
+  - `🐛 fix`: バグの修正
+  - `📈 improve`: 機能追加でもバグ修正でもない、コードの改善
+  - `🎨 style`: スタイルの追加・修正・削除
   - `📚 docs`: ドキュメントの追加・修正・削除
-  - `🐛 fix`: 機能やバグに関する修正
-  - `🎨 style`: スタイル関連
   - `🔧 chore`: 雑事、カテゴライズする必要のないもの
-  - その他は必要に応じて適宜追加
 
 手順はこちら：
 
 - `git add .`
-- `git commit -m "📚 docs: README.md 日本語訳追加 #12"`
+- `git commit -m "📚 docs: README.mdに日本語訳を追加 #12"`
 
 ### Branch
 
@@ -120,10 +120,10 @@ Issue には、用意されたテンプレートを利用できます！
 
 命名規則は、次のとおりです：
 
-- `prefix/#issue番号-簡潔な作業内容`
-  - 例: `docs/#01-create-documents`
+- `prefix/簡潔な作業内容-#issue番号-`
+  - 例: `docs/create-documents-#01`
 - 単語の区切りには 「-」を使いましょう。
-- `prefix`に関しては、コミットメッセージの`prefix`を参考
+- `prefix`に関しては、[コミットメッセージ](https://github.com/first-contributions-ja/first-contributions-ja.github.io/blob/main/docs/CONTRIBUTING.md#commit-message)を参考にしてください
 
 手順はこちら：
 
