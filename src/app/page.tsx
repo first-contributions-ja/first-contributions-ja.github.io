@@ -6,10 +6,13 @@ import { SITE_NAME } from "../../lib/constants";
 import KeyboardDoubleArrowDownSharpIcon from "@mui/icons-material/KeyboardDoubleArrowDownSharp";
 import contributors from "../../Contributors.json";
 import GradientBackground from "@/components/gradient-background";
+import ScreenEmojis from "@/components/screen-emojis";
+import groupContributorsBySection from "@/utils/contributors-grouping";
 
 export default function Home() {
   const contributorsNumber = contributors.length;
   const gradientColor = contributors[0].favoriteColor;
+  const contributorsGroups = groupContributorsBySection(contributors, 3);
 
   return (
     <>
@@ -66,14 +69,17 @@ export default function Home() {
       </section>
 
       <GradientBackground mainColor={gradientColor}>
+        <ScreenEmojis contributors={contributorsGroups[0]} isTopSection />
         <section className="mx-auto h-screen max-w-screen-xl">
           セクション1
         </section>
 
+        <ScreenEmojis contributors={contributorsGroups[1]} />
         <section className="mx-auto h-screen max-w-screen-xl">
           セクション2
         </section>
 
+        <ScreenEmojis contributors={contributorsGroups[2]} />
         <section className="bg-red-600 p-6 pb-0 pt-8 md:px-10 md:pt-10">
           <div className="rounded-md bg-white px-5 pb-16 pt-12 md:p-20 md:pt-8">
             <h2 className="text-center text-xl font-bold tracking-tighter text-red-600 md:pb-4 md:pt-12 md:text-3xl">
@@ -134,6 +140,13 @@ export default function Home() {
           </div>
         </section>
       </GradientBackground>
+      {/* tailwind のclassをCSSに含める */}
+      <div className="hidden animate-[horizontal_3s_ease-in-out_infinite_alternate_both]">
+        horizontal
+      </div>
+      <div className="hidden animate-[vertical_3s_ease-in-out_infinite_alternate_both]">
+        vertical
+      </div>
     </>
   );
 }
