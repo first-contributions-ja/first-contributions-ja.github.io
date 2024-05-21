@@ -8,12 +8,12 @@ const emoji = Noto_Emoji({
   display: "swap",
 });
 
-type SectionBackgroundEmojisProps = {
+type ScreenEmojisProps = {
   contributors: typeof contributors;
   isTopSection?: boolean;
 };
 
-const ScreenEmojis: React.FC<SectionBackgroundEmojisProps> = ({
+const ScreenEmojis: React.FC<ScreenEmojisProps> = ({
   contributors,
   isTopSection,
 }) => {

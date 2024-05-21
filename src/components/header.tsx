@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className="fixed left-0 top-0 z-10 w-full py-3 backdrop-blur-sm lg:py-4">
       <Link href="/">
-        <h1 className="ml-3 inline text-lg font-bold text-red-600 transition hover:opacity-70 lg:ml-5">
+        <span className="ml-3 inline text-lg font-bold text-red-600 transition hover:opacity-70 lg:ml-5">
           <Image
             src={`${BASE_PATH}/logo.svg`}
             width={640}
@@ -16,7 +16,7 @@ export default function Header() {
             className="mr-2 inline-block w-[40px] lg:mr-4"
           />
           {SITE_NAME}
-        </h1>
+        </span>
       </Link>
     </header>
   );
