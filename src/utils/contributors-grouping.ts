@@ -1,5 +1,7 @@
 import contributors from "../../Contributors.json";
 
+const latestContributorsColor = contributors[0].favoriteColor;
+
 type contributor = typeof contributors;
 
 const SECTION_SIZE = 10;
@@ -24,4 +26,4 @@ const groupContributorsBySection = (
   return sctionGroups;
 };
 
-export default groupContributorsBySection;
+export { latestContributorsColor, groupContributorsBySection };

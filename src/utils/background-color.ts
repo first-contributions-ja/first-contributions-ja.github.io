@@ -1,4 +1,4 @@
-const hexToRgb = (color: string, transparency = 1) => {
+export const hexToRgb = (color: string, transparency = 1) => {
   const rgbValues = Object.fromEntries(
     (
       (color.match(/^#?[0-9A-Fa-f]{3}([0-9A-Fa-f]{3})?$/) ? color : "000")

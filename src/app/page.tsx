@@ -4,14 +4,17 @@ export const BASE_PATH = basePath ? basePath : "";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { SITE_NAME } from "../../lib/constants";
 import KeyboardDoubleArrowDownSharpIcon from "@mui/icons-material/KeyboardDoubleArrowDownSharp";
-import contributors from "../../Contributors.json";
 import GradientBackground from "@/components/gradient-background";
 import ScreenEmojis from "@/components/screen-emojis";
-import groupContributorsBySection from "@/utils/contributors-grouping";
+
+import contributors from "../../Contributors.json";
+import {
+  groupContributorsBySection,
+  latestContributorsColor,
+} from "@/utils/contributors-grouping";
 
 export default function Home() {
   const contributorsNumber = contributors.length;
-  const gradientColor = contributors[0].favoriteColor;
   const contributorsGroups = groupContributorsBySection(contributors, 3);
 
   return (
@@ -68,7 +71,7 @@ export default function Home() {
         </p>
       </section>
 
-      <GradientBackground mainColor={gradientColor}>
+      <GradientBackground mainColor={latestContributorsColor}>
         <ScreenEmojis contributors={contributorsGroups[0]} isTopSection />
         <section className="mx-auto h-screen max-w-screen-xl">
           セクション1

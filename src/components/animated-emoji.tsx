@@ -4,6 +4,8 @@ import {
   getEmojiSize,
 } from "@/utils/animated-emoji";
 import contributors from "../../Contributors.json";
+import { latestContributorsColor } from "@/utils/contributors-grouping";
+import { hexToRgb } from "@/utils/background-color";
 
 type AnimatedEmojiProps = {
   index: number;
@@ -23,6 +25,7 @@ const AnimatedEmoji: React.FC<AnimatedEmojiProps> = ({
   const speed = Math.floor(Math.random() * 65 + 35) / 10;
   const styles = getAnimationStyles(index, speed);
   const notoEmoji = emojiToUnicodeHex(contributor.favoriteEmoji);
+  const emojiColor = hexToRgb(latestContributorsColor, 0.5);
 
   return (
     <>
@@ -33,7 +36,8 @@ const AnimatedEmoji: React.FC<AnimatedEmojiProps> = ({
         <div className="relative h-full w-full rounded-full duration-1000 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           <div className="absolute h-full w-full rounded-full [backface-visibility:hidden]">
             <div
-              className={`flex h-full w-full flex-col items-center justify-center gap-0.5 text-black ${emojiSize}`}
+              className={`flex h-full w-full flex-col items-center justify-center gap-0.5 ${emojiSize}`}
+              style={{ color: emojiColor }}
               dangerouslySetInnerHTML={{ __html: notoEmoji }}
             ></div>
           </div>
