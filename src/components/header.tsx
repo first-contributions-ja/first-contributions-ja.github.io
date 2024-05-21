@@ -5,7 +5,7 @@ import { BASE_PATH } from "../app/page";
 
 export default function Header() {
   return (
-    <header className="fixed left-0 top-0 w-full py-3 backdrop-blur-sm lg:py-4">
+    <header className="fixed left-0 top-0 z-10 w-full py-3 backdrop-blur-sm lg:py-4">
       <Link href="/">
         <h1 className="ml-3 inline text-lg font-bold text-red-600 transition hover:opacity-70 lg:ml-5">
           <Image
