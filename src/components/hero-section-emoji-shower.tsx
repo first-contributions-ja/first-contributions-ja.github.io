@@ -1,0 +1,113 @@
+import { Noto_Emoji } from "next/font/google";
+
+const emojiFont = Noto_Emoji({
+  subsets: ["emoji"],
+  weight: "300",
+  display: "swap",
+});
+
+const EmojiShower: React.FC = () => {
+  const emojis = [
+    "😊",
+    "😂",
+    "❤️",
+    "👍",
+    "🎉",
+    "🥳",
+    "😎",
+    // "💖",
+    // "👏",
+    // "🤔",
+    // "😆",
+    // "🔥",
+    // "✨",
+    // "🥺",
+    // "🤗",
+    // "😁",
+    // "😅",
+    // "🙌",
+    // "😇",
+    // "🍕",
+    // "🎈",
+    // "🎶",
+    // "🌟",
+    // "🍰",
+    // "💪",
+    // "🌸",
+    // "🎂",
+    // "🎁",
+    // "🌞",
+    // "🍔",
+    // "🎨",
+    // "💃",
+    // "🎊",
+    // "🕺",
+    // "🚀",
+    // "🌈",
+    // "🌍",
+    // "🧁",
+    // "🎵",
+    // "🍿",
+    // "🏆",
+    // "🧸",
+    // "🎮",
+    // "👑",
+    // "🍓",
+    // "🎲",
+    // "🚴",
+    // "🍟",
+    // "🦄",
+    // "🌺",
+  ];
+
+  const rainbowColors = [
+    "text-red-500",
+    "text-orange-500",
+    "text-yellow-500",
+    "text-lime-500",
+    "text-sky-500",
+    "text-indigo-500",
+    "text-purple-500",
+  ];
+
+  const rainbowColors2 = [
+    "bg-red-100",
+    "bg-orange-100",
+    "bg-yellow-100",
+    "bg-lime-100",
+    "bg-sky-100",
+    "bg-indigo-100",
+    "bg-purple-100",
+  ];
+
+  const animations = [
+    "animate-[topTpBottomAtHero_6s_linear_infinite]",
+    "animate-[topTpBottomAtHero_6.5s_linear_infinite]",
+    "animate-[topTpBottomAtHero_7s_linear_infinite]",
+    "animate-[topTpBottomAtHero_7.5s_linear_infinite]",
+    "animate-[topTpBottomAtHero_8s_linear_infinite]",
+    "animate-[topTpBottomAtHero_8.5s_linear_infinite]",
+    "animate-[topTpBottomAtHero_9s_linear_infinite]",
+    "animate-[topTpBottomAtHero_9.5s_linear_infinite]",
+  ];
+
+  return (
+    <div className="absolute -right-2 -top-8 z-0 flex h-[150vh] rotate-12">
+      {emojis.map((emoji, index) => {
+        return (
+          <>
+            <div
+              key={index}
+              className={`${emojiFont.className} ${rainbowColors[index]} ${rainbowColors2[index]}
+              px-1 text-3xl`}
+            >
+              <div className={`${animations[index]}`}>{emoji}</div>
+            </div>
+          </>
+        );
+      })}
+    </div>
+  );
+};
+
+export default EmojiShower;
