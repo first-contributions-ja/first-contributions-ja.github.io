@@ -36,6 +36,15 @@ const config: Config = {
           transform: "translateY(110vh)",
         },
       },
+      topTpBottomAtHeroSp: {
+        from: {
+          transform: "translateY(0)",
+        },
+
+        to: {
+          transform: "translateY(150vh)",
+        },
+      },
     },
   },
   plugins: [],

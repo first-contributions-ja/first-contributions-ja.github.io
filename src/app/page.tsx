@@ -7,13 +7,13 @@ import { SITE_NAME } from "../../lib/constants";
 import KeyboardDoubleArrowDownSharpIcon from "@mui/icons-material/KeyboardDoubleArrowDownSharp";
 import GradientBackground from "@/components/gradient-background";
 import ScreenEmojis from "@/components/screen-emojis";
+import EmojiShower from "@/components/hero-section-emoji-shower";
 
 import contributors from "../../Contributors.json";
 import {
   groupContributorsBySection,
   latestContributorsColor,
 } from "@/utils/contributors-grouping";
-import EmojiShower from "@/components/hero-section-emoji-shower";
 
 export default function Home() {
   const contributorsNumber = contributors.length;
@@ -23,26 +23,29 @@ export default function Home() {
     <>
       <section className="relative h-screen overflow-hidden">
         <EmojiShower />
-        <div className="relative z-10 flex h-full items-center">
-          <div className="px-4">
-            <h1 className="text-4xl font-bold leading-snug">
+        <div className="absolute bottom-0 left-0 h-20 w-full bg-gradient-to-t from-white to-transparent"></div>
+        <div className="relative z-10 mx-auto flex h-full items-center justify-start lg:max-w-screen-xl">
+          <div className=" px-4 lg:px-0">
+            <h1 className="text-4xl font-bold leading-snug lg:text-6xl lg:leading-normal">
               オープンソース
-              <br />
+              <br className="lg:hidden" />
               プロジェクトに
               <br />
               参加しよう
             </h1>
-            <p className="mt-6">
-              日本語のチュートリアルでGitHubの使い方を学び、共同開発を体験しましょう。思ったより簡単です。
+            <p className="mt-6 lg:mt-6 lg:text-lg lg:leading-loose">
+              日本語のチュートリアルでGitHubの使い方を学び、
+              <br className="hidden lg:block" />
+              共同開発を体験しましょう。思ったより簡単です。
             </p>
 
-            <div className="mt-8 flex flex-col items-start">
-              <button className="flex w-40 items-center justify-center gap-2 rounded-full bg-red-600 px-4 py-4 text-center text-lg text-white">
-                <GitHubIcon className="" />
+            <div className="mt-8 flex flex-col items-start gap-4 lg:mt-12 lg:flex-row">
+              <button className="flex h-12 w-40 items-center justify-center gap-2 rounded-full bg-red-600 px-4 text-center text-white duration-300 hover:opacity-60">
+                <GitHubIcon className="text-2xl" />
                 GitHub
               </button>
-              <button className="mt-4 flex w-40 items-center justify-center gap-2 rounded-full border border-stone-800 bg-white px-4 py-4 text-red-600">
-                <ShareIcon className="" />
+              <button className="flex h-12 w-40 items-center justify-center gap-2 rounded-full border border-stone-800 bg-white px-4 text-red-600 duration-300 hover:opacity-60">
+                <ShareIcon className="text-2xl" />
                 Share
               </button>
             </div>
