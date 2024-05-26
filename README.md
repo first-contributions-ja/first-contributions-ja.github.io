@@ -63,7 +63,7 @@
 
 ### 何をすればいいの？
 
-このプロジェクトの参加者として、Contributors.json ファイルに下記の情報を入力します！
+このプロジェクトの参加者として、Contributors.json ファイルに下記の情報を追記します！
 
 ```
 "name": "あなたのハンドルネーム",
@@ -74,13 +74,11 @@
 
 入力された情報は、絵文字のアイコンとして、[Webサイト](https://first-contributions-ja.github.io)上に表示されます。<br>
 なので、コントリビューターが増えるたびに、サイト上が賑やかになります！
-![emoji animation](/docs/movie/emoji-animation.mp4)
 
-> **私たちは、First Contributions JA の Web サイトを、今よりもっとPOPにしたいです！<br>
-> ぜひ、あなたの力を貸してください** 💪
+動画
 
-これから行うチュートリアルは、次の 8 つのステップで完了します！<br>
-実際に手を動かしてみてください :octocat:
+私たちは、First Contributions JA の Web サイトを、今よりもっとPOPにしたいです！<br>
+ぜひ、実際に手を動かしてみてください :octocat:
 
 - [実際に手を動かす](#実際に手を動かす)
   - [セットアップ:](#セットアップ)
@@ -214,7 +212,7 @@ GitHub 上でファイルを編集することも可能ですが、<br>
   ```
 
 <p align="center">
-  <img height=300px src="/docs/images/copy-code-template.png">
+  <img height=300px src="/docs/images/copy-and-paste-code.png">
 </p>
 
 - そして、貼り付けたテキストの中身を、あなた独自の内容に置き換えます。
