@@ -113,17 +113,15 @@ const EmojiShower: React.FC = () => {
     <div className=" absolute -right-2 -top-8 z-0 flex h-[150vh] rotate-12 lg:-top-[15vh] lg:right-4 lg:rotate-[25deg]">
       {randomEmojis.map((emoji, index) => {
         return (
-          <>
-            <div
-              key={index}
-              className={`${emojiFont.className} ${rainbowColors[index]} ${rainbowColors2[index]}
+          <div
+            key={index}
+            className={`${emojiFont.className} ${rainbowColors[index]} ${rainbowColors2[index]}
               px-1 text-3xl lg:px-2 lg:text-6xl`}
-            >
-              <div className={`${animations[index]} ${animationsSp[index]}`}>
-                {emoji}
-              </div>
+          >
+            <div className={`${animations[index]} ${animationsSp[index]}`}>
+              {emoji}
             </div>
-          </>
+          </div>
         );
       })}
     </div>
