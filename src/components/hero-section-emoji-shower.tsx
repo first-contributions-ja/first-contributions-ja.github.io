@@ -67,7 +67,7 @@ const EmojiShower: React.FC = () => {
     randomEmojis.push(emojis[randomNumber]);
   }
 
-  const rainbowColors = [
+  const textRainbowColors = [
     "text-rose-500",
     "text-orange-500",
     "text-yellow-500",
@@ -77,7 +77,7 @@ const EmojiShower: React.FC = () => {
     "text-purple-500",
   ];
 
-  const rainbowColors2 = [
+  const bgRainbowColors = [
     "bg-rose-100",
     "bg-orange-100",
     "bg-yellow-100",
@@ -87,26 +87,26 @@ const EmojiShower: React.FC = () => {
     "bg-purple-100",
   ];
 
-  const animations = [
-    "animate-[topToBottomAtHero_6s_linear_infinite]",
-    "animate-[topToBottomAtHero_6.5s_linear_infinite]",
-    "animate-[topToBottomAtHero_7s_linear_infinite]",
-    "animate-[topToBottomAtHero_7.5s_linear_infinite]",
-    "animate-[topToBottomAtHero_8s_linear_infinite]",
-    "animate-[topToBottomAtHero_8.5s_linear_infinite]",
-    "animate-[topToBottomAtHero_9s_linear_infinite]",
-    "animate-[topToBottomAtHero_9.5s_linear_infinite]",
+  const animationsSp = [
+    "animate-[topToBottomAtHeroSp_6s_linear_infinite]",
+    "animate-[topToBottomAtHeroSp_6.5s_linear_infinite]",
+    "animate-[topToBottomAtHeroSp_7s_linear_infinite]",
+    "animate-[topToBottomAtHeroSp_7.5s_linear_infinite]",
+    "animate-[topToBottomAtHeroSp_8s_linear_infinite]",
+    "animate-[topToBottomAtHeroSp_8.5s_linear_infinite]",
+    "animate-[topToBottomAtHeroSp_9s_linear_infinite]",
+    "animate-[topToBottomAtHeroSp_9.5s_linear_infinite]",
   ];
 
-  const animationsSp = [
-    "lg:animate-[topToBottomAtHeroSp_6s_linear_infinite]",
-    "lg:animate-[topToBottomAtHeroSp_6.5s_linear_infinite]",
-    "lg:animate-[topToBottomAtHeroSp_7s_linear_infinite]",
-    "lg:animate-[topToBottomAtHeroSp_7.5s_linear_infinite]",
-    "lg:animate-[topToBottomAtHeroSp_8s_linear_infinite]",
-    "lg:animate-[topToBottomAtHeroSp_8.5s_linear_infinite]",
-    "lg:animate-[topToBottomAtHeroSp_9s_linear_infinite]",
-    "lg:animate-[topToBottomAtHeroSp_9.5s_linear_infinite]",
+  const animationsPc = [
+    "lg:animate-[topToBottomAtHeroPc_6s_linear_infinite]",
+    "lg:animate-[topToBottomAtHeroPc_6.5s_linear_infinite]",
+    "lg:animate-[topToBottomAtHeroPc_7s_linear_infinite]",
+    "lg:animate-[topToBottomAtHeroPc_7.5s_linear_infinite]",
+    "lg:animate-[topToBottomAtHeroPc_8s_linear_infinite]",
+    "lg:animate-[topToBottomAtHeroPc_8.5s_linear_infinite]",
+    "lg:animate-[topToBottomAtHeroPc_9s_linear_infinite]",
+    "lg:animate-[topToBottomAtHeroPc_9.5s_linear_infinite]",
   ];
 
   return (
@@ -115,10 +115,10 @@ const EmojiShower: React.FC = () => {
         return (
           <div
             key={index}
-            className={`${emojiFont.className} ${rainbowColors[index]} ${rainbowColors2[index]}
+            className={`${emojiFont.className} ${textRainbowColors[index]} ${bgRainbowColors[index]}
               px-1 text-3xl lg:px-2 lg:text-6xl`}
           >
-            <div className={`${animations[index]} ${animationsSp[index]}`}>
+            <div className={`${animationsSp[index]} ${animationsPc[index]}`}>
               {emoji}
             </div>
           </div>
