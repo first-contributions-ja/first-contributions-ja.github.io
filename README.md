@@ -75,7 +75,7 @@
 入力された情報は、絵文字のアイコンとして、[Webサイト](https://first-contributions-ja.github.io)上に表示されます。<br>
 なので、コントリビューターが増えるたびに、サイト上が賑やかになります！
 
-動画
+https://github.com/first-contributions-ja/first-contributions-ja.github.io/assets/70629747/d83d26ae-3a03-4313-b6bc-b12a865f466f
 
 私たちは、First Contributions JA の Web サイトを、今よりもっとPOPにしたいです！<br>
 ぜひ、実際に手を動かしてみてください :octocat:
