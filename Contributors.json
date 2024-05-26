@@ -2,35 +2,30 @@
   {
     "name": "Aileen",
     "github": "https://github.com/pss-aileen",
-    "favoriteStack": "Vanilla JavaScript",
     "favoriteColor": "#25b7c0",
     "favoriteEmoji": "🫧"
   },
   {
     "name": "kagome",
     "github": "https://github.com/kagomen",
-    "favoriteStack": "Tailwind CSS",
     "favoriteColor": "#008db7",
     "favoriteEmoji": "🌀"
   },
   {
     "name": "kazzyfrog",
     "github": "https://github.com/kazzyfrog",
-    "favoriteStack": "Next.js",
     "favoriteColor": "#98fb98",
     "favoriteEmoji": "🐸"
   },
   {
     "name": "oginochihiro",
     "github": "https://github.com/first-contributions-ja",
-    "favoriteStack": "GitHub",
     "favoriteColor": "#ffffff",
     "favoriteEmoji": "🐉"
   },
   {
     "name": "Prabesh",
     "github": "https://github.com/prabesh09",
-    "favoriteStack": "MERN",
     "favoriteColor": "#111111",
     "favoriteEmoji": "😼"
   }
