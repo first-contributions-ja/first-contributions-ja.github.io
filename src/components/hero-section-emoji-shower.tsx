@@ -67,8 +67,6 @@ const EmojiShower: React.FC = () => {
     randomEmojis.push(emojis[randomNumber]);
   }
 
-  console.log(randomEmojis);
-
   const rainbowColors = [
     "text-rose-500",
     "text-orange-500",
