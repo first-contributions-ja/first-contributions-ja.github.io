@@ -63,7 +63,7 @@ const EmojiShower: React.FC = () => {
   const randomEmojis = [];
 
   for (let i = 1; i <= 7; i++) {
-    const randomNumber = Math.floor(Math.random() * 51);
+    const randomNumber = Math.floor(Math.random() * 50);
     randomEmojis.push(emojis[randomNumber]);
   }
 
