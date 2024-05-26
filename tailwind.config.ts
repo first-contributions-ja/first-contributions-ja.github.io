@@ -27,7 +27,7 @@ const config: Config = {
           transform: "translateY(80vh)",
         },
       },
-      topTpBottomAtHero: {
+      topToBottomAtHero: {
         from: {
           transform: "translateY(0)",
         },
@@ -36,7 +36,7 @@ const config: Config = {
           transform: "translateY(110vh)",
         },
       },
-      topTpBottomAtHeroSp: {
+      topToBottomAtHeroSp: {
         from: {
           transform: "translateY(0)",
         },

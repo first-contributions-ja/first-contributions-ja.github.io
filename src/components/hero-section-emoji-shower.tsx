@@ -90,25 +90,25 @@ const EmojiShower: React.FC = () => {
   ];
 
   const animations = [
-    "animate-[topTpBottomAtHero_6s_linear_infinite]",
-    "animate-[topTpBottomAtHero_6.5s_linear_infinite]",
-    "animate-[topTpBottomAtHero_7s_linear_infinite]",
-    "animate-[topTpBottomAtHero_7.5s_linear_infinite]",
-    "animate-[topTpBottomAtHero_8s_linear_infinite]",
-    "animate-[topTpBottomAtHero_8.5s_linear_infinite]",
-    "animate-[topTpBottomAtHero_9s_linear_infinite]",
-    "animate-[topTpBottomAtHero_9.5s_linear_infinite]",
+    "animate-[topToBottomAtHero_6s_linear_infinite]",
+    "animate-[topToBottomAtHero_6.5s_linear_infinite]",
+    "animate-[topToBottomAtHero_7s_linear_infinite]",
+    "animate-[topToBottomAtHero_7.5s_linear_infinite]",
+    "animate-[topToBottomAtHero_8s_linear_infinite]",
+    "animate-[topToBottomAtHero_8.5s_linear_infinite]",
+    "animate-[topToBottomAtHero_9s_linear_infinite]",
+    "animate-[topToBottomAtHero_9.5s_linear_infinite]",
   ];
 
   const animationsSp = [
-    "lg:animate-[topTpBottomAtHeroSp_6s_linear_infinite]",
-    "lg:animate-[topTpBottomAtHeroSp_6.5s_linear_infinite]",
-    "lg:animate-[topTpBottomAtHeroSp_7s_linear_infinite]",
-    "lg:animate-[topTpBottomAtHeroSp_7.5s_linear_infinite]",
-    "lg:animate-[topTpBottomAtHeroSp_8s_linear_infinite]",
-    "lg:animate-[topTpBottomAtHeroSp_8.5s_linear_infinite]",
-    "lg:animate-[topTpBottomAtHeroSp_9s_linear_infinite]",
-    "lg:animate-[topTpBottomAtHeroSp_9.5s_linear_infinite]",
+    "lg:animate-[topToBottomAtHeroSp_6s_linear_infinite]",
+    "lg:animate-[topToBottomAtHeroSp_6.5s_linear_infinite]",
+    "lg:animate-[topToBottomAtHeroSp_7s_linear_infinite]",
+    "lg:animate-[topToBottomAtHeroSp_7.5s_linear_infinite]",
+    "lg:animate-[topToBottomAtHeroSp_8s_linear_infinite]",
+    "lg:animate-[topToBottomAtHeroSp_8.5s_linear_infinite]",
+    "lg:animate-[topToBottomAtHeroSp_9s_linear_infinite]",
+    "lg:animate-[topToBottomAtHeroSp_9.5s_linear_infinite]",
   ];
 
   return (
