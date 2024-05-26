@@ -2,10 +2,12 @@ import Image from "next/image";
 import { basePath } from "../../next.config";
 export const BASE_PATH = basePath ? basePath : "";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import ShareIcon from "@mui/icons-material/Share";
 import { SITE_NAME } from "../../lib/constants";
 import KeyboardDoubleArrowDownSharpIcon from "@mui/icons-material/KeyboardDoubleArrowDownSharp";
 import GradientBackground from "@/components/gradient-background";
 import ScreenEmojis from "@/components/screen-emojis";
+import EmojiShower from "@/components/hero-section-emoji-shower";
 
 import contributors from "../../Contributors.json";
 import {
@@ -19,56 +21,36 @@ export default function Home() {
 
   return (
     <>
-      <section className="mx-auto mt-20 max-w-2xl px-6 lg:-mb-4 lg:mt-4 lg:flex lg:h-screen lg:max-w-7xl lg:items-center  lg:gap-10">
-        <div className="lg:flex-1">
-          <p className="hidden bg-stone-100 px-4 py-2 lg:inline-block">
-            <span className="text-2xl font-bold text-red-600">
-              {contributorsNumber}
-            </span>
-            人が参加中！
-          </p>
-          <div className="my-8 w-full lg:hidden">
-            <Image
-              src={`${BASE_PATH}/logo.svg`}
-              width={640}
-              height={324}
-              alt="logo"
-              className="mx-auto w-[70%] max-w-[400px]"
-            />
-          </div>
-          <p className="mt-4 text-2xl font-bold lg:text-3xl">
-            誰でも簡単に
-            <br />
-            コントリビューション体験 🚀
-          </p>
-          <h2 className="mt-4 hidden bg-red-600 px-4 py-2 text-5xl font-bold text-white lg:inline-block">
-            {SITE_NAME}
-          </h2>
-          <div className="mt-4 text-sm leading-relaxed lg:text-lg">
-            <p>
-              初心者でも簡単に参加できる日本語のオープンソースプロジェクトです。
+      <section className="relative h-screen overflow-hidden">
+        <EmojiShower />
+        <div className="absolute bottom-0 left-0 h-20 w-full bg-gradient-to-t from-white to-transparent"></div>
+        <div className="relative z-10 mx-auto flex h-full items-center justify-start lg:max-w-screen-xl">
+          <div className=" px-4 lg:px-0">
+            <h1 className="text-4xl font-bold leading-snug lg:text-6xl lg:leading-normal">
+              オープンソース
+              <br className="lg:hidden" />
+              プロジェクトに
+              <br />
+              参加しよう
+            </h1>
+            <p className="mt-6 lg:mt-6 lg:text-lg lg:leading-loose">
+              日本語のチュートリアルでGitHubの使い方を学び、
+              <br className="hidden lg:block" />
+              共同開発を体験しましょう。思ったより簡単です。
             </p>
-            <p>
-              Git/GitHubの実践的な使い方や、オープンソースでコラボレーションする作法を学べます
-              🌟
-            </p>
+
+            <div className="mt-8 flex flex-col items-start gap-4 lg:mt-12 lg:flex-row">
+              <button className="flex h-12 w-40 items-center justify-center gap-2 rounded-full bg-red-600 px-4 text-center text-white duration-300 hover:opacity-60">
+                <GitHubIcon className="text-2xl" />
+                GitHub
+              </button>
+              <button className="flex h-12 w-40 items-center justify-center gap-2 rounded-full border border-stone-800 bg-white px-4 text-red-600 duration-300 hover:opacity-60">
+                <ShareIcon className="text-2xl" />
+                Share
+              </button>
+            </div>
           </div>
         </div>
-        <div className="hidden lg:inline-block lg:flex-[0.8]">
-          <Image
-            src={`${BASE_PATH}/logo.svg`}
-            width={640}
-            height={324}
-            alt="logo"
-            className="w-full"
-          />
-        </div>
-        <p className="mx-auto mb-10 mt-5 rounded-sm bg-stone-100 px-4 py-2 text-center lg:hidden">
-          <span className="text-2xl font-bold text-red-600">
-            {contributorsNumber}
-          </span>
-          人が参加中！
-        </p>
       </section>
 
       <GradientBackground mainColor={latestContributorsColor}>
