@@ -63,17 +63,21 @@
 
 ### 何をすればいいの？
 
-> **このプロジェクトの参加者として、Contributors.json ファイルに必要な情報を入力し、プロフィールを作成します！**
-
-記載する情報は、以下のとおりです：
+このプロジェクトの参加者として、Contributors.json ファイルに下記の情報を入力します！
 
 ```
 "name": "あなたのハンドルネーム",
 "github": "あなたのGitHubアカウントのURL",
-"favoriteStack": "あなたの好きなプログラミング言語・技術スタック",
 "favoriteColor": "あなたの好きなカラーコード",
 "favoriteEmoji": "あなたの好きな絵文字"
 ```
+
+入力された情報は、絵文字のアイコンとして、[Webサイト](https://first-contributions-ja.github.io)上に表示されます。<br>
+なので、コントリビューターが増えるたびに、サイト上が賑やかになります！
+![emoji animation](/docs/movie/emoji-animation.mp4)
+
+> **私たちは、First Contributions JA の Web サイトを、今よりもっとPOPにしたいです！<br>
+> ぜひ、あなたの力を貸してください** 💪
 
 これから行うチュートリアルは、次の 8 つのステップで完了します！<br>
 実際に手を動かしてみてください :octocat:
@@ -204,7 +208,6 @@ GitHub 上でファイルを編集することも可能ですが、<br>
   {
     "name": "あなたのハンドルネーム",
     "github": "あなたのGitHubアカウントのURL",
-    "favoriteStack": "あなたの好きなプログラミング言語・技術スタック",
     "favoriteColor": "あなたの好きなカラーコード",
     "favoriteEmoji": "あなたの好きな絵文字"
   },
@@ -223,7 +226,6 @@ GitHub 上でファイルを編集することも可能ですが、<br>
     {
       "name": "oginochihiro",
       "github": "https://github.com/first-contributions-ja",
-      "favoriteStack": "GitHub",
       "favoriteColor": "#ffffff",
       "favoriteEmoji": "🐉"
     },
