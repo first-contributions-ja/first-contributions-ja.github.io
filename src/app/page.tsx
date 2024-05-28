@@ -1,9 +1,8 @@
-import Image from "next/image";
 import { basePath } from "../../next.config";
 export const BASE_PATH = basePath ? basePath : "";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ShareIcon from "@mui/icons-material/Share";
-import { SITE_NAME, TWITTER_SHARE } from "../../lib/constants";
+import { TWITTER_SHARE } from "../../lib/constants";
 import KeyboardDoubleArrowDownSharpIcon from "@mui/icons-material/KeyboardDoubleArrowDownSharp";
 import GradientBackground from "@/components/gradient-background";
 import ScreenEmojis from "@/components/screen-emojis";
@@ -17,7 +16,6 @@ import {
 import Button from "@/components/ui/button";
 
 export default function Home() {
-  const contributorsNumber = contributors.length;
   const contributorsGroups = groupContributorsBySection(contributors, 3);
 
   return (
