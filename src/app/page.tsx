@@ -14,6 +14,9 @@ import {
   latestContributorsColor,
 } from "@/utils/contributors-grouping";
 import Button from "@/components/ui/button";
+import SpeechBubbleItem from "@/components/ui/speechBubbleItem";
+import SpeechBubbleWrapper from "@/components/ui/SpeechBubbleWrapper";
+import Image from "next/image";
 
 export default function Home() {
   const contributorsGroups = groupContributorsBySection(contributors, 3);
@@ -54,17 +57,74 @@ export default function Home() {
 
       <GradientBackground mainColor={latestContributorsColor}>
         <ScreenEmojis contributors={contributorsGroups[0]} isTopSection />
-        <section className="mx-auto h-screen max-w-screen-xl">
-          セクション1
+        <section className="mx-auto max-w-screen-xl px-4">
+          <SpeechBubbleWrapper>
+            <SpeechBubbleItem>
+              <p>Help Wanted</p>
+              <h2>このWebサイトを、もっとPOPにしよう</h2>
+            </SpeechBubbleItem>
+            <Image
+              src={`${BASE_PATH}/test.svg`}
+              width={640}
+              height={361}
+              alt="test image"
+              className="overflow-hidden rounded-[24px]"
+            />
+            <SpeechBubbleItem>
+              チュートリアルは、実際にJSONファイルに変更を加えるシンプルな作業を行います。
+            </SpeechBubbleItem>
+            <SpeechBubbleItem>
+              それによって、あなたが入力した絵文字がこのサイト上に表示され、今よりもっとにぎやかで楽しい雰囲気をつ作り出します！
+            </SpeechBubbleItem>
+          </SpeechBubbleWrapper>
         </section>
 
         <ScreenEmojis contributors={contributorsGroups[1]} />
-        <section className="mx-auto h-screen max-w-screen-xl">
-          セクション2
+        <section className="mx-auto mt-8 max-w-screen-xl px-4">
+          <SpeechBubbleWrapper type="right">
+            <SpeechBubbleItem type="right">
+              <p>面白そう🌈 でもなんだか、難しそう...😕</p>
+            </SpeechBubbleItem>
+          </SpeechBubbleWrapper>
         </section>
 
         <ScreenEmojis contributors={contributorsGroups[2]} />
-        <section className="bg-red-600 p-6 pb-0 pt-8 md:px-10 md:pt-10">
+        <section className="mx-auto mt-8 max-w-screen-xl px-4">
+          <SpeechBubbleWrapper>
+            <SpeechBubbleItem>
+              <p>Help Wanted</p>
+              <h2>このWebサイトを、もっとPOPにしよう</h2>
+            </SpeechBubbleItem>
+            <Image
+              src={`${BASE_PATH}/test.svg`}
+              width={640}
+              height={361}
+              alt="test image"
+              className="overflow-hidden rounded-[24px]"
+            />
+            <SpeechBubbleItem>
+              チュートリアルは、実際にJSONファイルに変更を加えるシンプルな作業を行います。
+            </SpeechBubbleItem>
+            <SpeechBubbleItem>
+              それによって、あなたが入力した絵文字がこのサイト上に表示され、今よりもっとにぎやかで楽しい雰囲気をつ作り出します！
+            </SpeechBubbleItem>
+          </SpeechBubbleWrapper>
+        </section>
+
+        <ScreenEmojis contributors={contributorsGroups[1]} />
+        <section className="mx-auto mt-8 max-w-screen-xl px-4">
+          <SpeechBubbleWrapper type="right">
+            <SpeechBubbleItem type="right">
+              <p>
+                OSSコントリビューションは思ったより簡単なんだ✨
+                今すぐ参加します💨
+              </p>
+            </SpeechBubbleItem>
+          </SpeechBubbleWrapper>
+        </section>
+
+        <ScreenEmojis contributors={contributorsGroups[2]} />
+        <section className="mt-8 bg-red-600 p-6 pb-0 pt-8 md:px-10 md:pt-10">
           <div className="rounded-md bg-white px-5 pb-16 pt-12 md:p-20 md:pt-8">
             <h2 className="text-center text-xl font-bold tracking-tighter text-red-600 md:pb-4 md:pt-12 md:text-3xl">
               簡単 8 STEP でコントリビューション！
