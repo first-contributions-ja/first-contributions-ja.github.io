@@ -1,9 +1,8 @@
-import Image from "next/image";
 import { basePath } from "../../next.config";
 export const BASE_PATH = basePath ? basePath : "";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ShareIcon from "@mui/icons-material/Share";
-import { SITE_NAME } from "../../lib/constants";
+import { TWITTER_SHARE } from "../../lib/constants";
 import KeyboardDoubleArrowDownSharpIcon from "@mui/icons-material/KeyboardDoubleArrowDownSharp";
 import GradientBackground from "@/components/gradient-background";
 import ScreenEmojis from "@/components/screen-emojis";
@@ -14,9 +13,9 @@ import {
   groupContributorsBySection,
   latestContributorsColor,
 } from "@/utils/contributors-grouping";
+import Button from "@/components/ui/button";
 
 export default function Home() {
-  const contributorsNumber = contributors.length;
   const contributorsGroups = groupContributorsBySection(contributors, 3);
 
   return (
@@ -40,14 +39,14 @@ export default function Home() {
             </p>
 
             <div className="mt-8 flex flex-col items-start gap-4 lg:mt-12 lg:flex-row">
-              <button className="flex h-12 w-40 items-center justify-center gap-2 rounded-full bg-red-600 px-4 text-center text-white duration-300 hover:opacity-60">
+              <Button>
                 <GitHubIcon className="text-2xl" />
                 GitHub
-              </button>
-              <button className="flex h-12 w-40 items-center justify-center gap-2 rounded-full border border-stone-800 bg-white px-4 text-red-600 duration-300 hover:opacity-60">
+              </Button>
+              <Button type="outline" href={TWITTER_SHARE}>
                 <ShareIcon className="text-2xl" />
                 Share
-              </button>
+              </Button>
             </div>
           </div>
         </div>
