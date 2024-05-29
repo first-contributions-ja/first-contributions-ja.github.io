@@ -23,5 +23,21 @@ body {
   right: 0;
 }
 
+.speechBubbleArrowPCLeft {
+  height: calc(tan(60deg) * 48px / 2);
+  width: 48px;
+  clip-path: polygon(0% 0%, 100% 30%, 30% 100%);
+  top: 0;
+  left: 0;
+}
+
+.speechBubbleArrowPCRight {
+  height: calc(tan(60deg) * 48px / 2);
+  width: 48px;
+  clip-path: polygon(100% 0%, 0% 30%, 70% 100%);
+  top: 0;
+  right: 0;
+}
+
 /* https://zenn.dev/var/articles/3cd463f2388a35 
 https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer*/
