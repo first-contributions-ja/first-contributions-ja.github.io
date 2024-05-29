@@ -30,7 +30,7 @@ const AnimatedEmoji: React.FC<AnimatedEmojiProps> = ({
   return (
     <>
       <div
-        className="group absolute flex h-20 w-20 cursor-pointer items-center justify-center rounded-full bg-transparent [perspective:1000px]"
+        className="group absolute -z-10 flex h-20 w-20 cursor-pointer items-center justify-center rounded-full bg-transparent [perspective:1000px]"
         style={styles as React.CSSProperties}
       >
         <div className="relative h-full w-full rounded-full duration-1000 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
