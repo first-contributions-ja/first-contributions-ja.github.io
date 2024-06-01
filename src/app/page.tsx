@@ -3,7 +3,6 @@ export const BASE_PATH = basePath ? basePath : "";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ShareIcon from "@mui/icons-material/Share";
 import { TWITTER_SHARE } from "../../lib/constants";
-import KeyboardDoubleArrowDownSharpIcon from "@mui/icons-material/KeyboardDoubleArrowDownSharp";
 import GradientBackground from "@/components/gradient-background";
 import ScreenEmojis from "@/components/screen-emojis";
 import EmojiShower from "@/components/hero-section-emoji-shower";
