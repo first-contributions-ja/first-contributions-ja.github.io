@@ -65,9 +65,9 @@ export default function Home() {
               <h2>このWebサイトを、もっとPOPにしよう</h2>
             </SpeechBubbleItem>
             <Image
-              src={`${BASE_PATH}/test.svg`}
+              src={`${BASE_PATH}/img-code.png`}
               width={640}
-              height={361}
+              height={410}
               alt="test image"
               className="overflow-hidden rounded-[24px]"
             />
@@ -95,13 +95,6 @@ export default function Home() {
               <p>Help Wanted</p>
               <h2>このWebサイトを、もっとPOPにしよう</h2>
             </SpeechBubbleItem>
-            <Image
-              src={`${BASE_PATH}/test.svg`}
-              width={640}
-              height={361}
-              alt="test image"
-              className="overflow-hidden rounded-[24px]"
-            />
             <SpeechBubbleItem>
               チュートリアルは、実際にJSONファイルに変更を加えるシンプルな作業を行います。
             </SpeechBubbleItem>

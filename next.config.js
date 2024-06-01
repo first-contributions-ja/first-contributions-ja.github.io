@@ -8,4 +8,7 @@ module.exports = {
   experimental: {
     optimizePackageImports: ["@mui/icons-material", "@mui/material"],
   },
+  images: {
+    unoptimized: true,
+  },
 };
