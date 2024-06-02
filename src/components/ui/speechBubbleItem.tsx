@@ -28,7 +28,7 @@ const SpeechBubbleItem: React.FC<SpeechBubbleItemProps> = ({
       <div
         className={`${speechBubbleArrowDirection} ${bgColor} absolute lg:hidden`}
       ></div>
-      <div id="SpeechBubbleItem__inner">{children}</div>
+      <div>{children}</div>
     </div>
   );
 };
