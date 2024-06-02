@@ -14,7 +14,7 @@ const GradientBackground: React.FC<GradientBackgroundProps> = ({
 
   return (
     <main
-      className="bg-gradient-to-b from-[var(--background-start-rgb)] via-[var(--background-middle-rgb)] to-[var(--background-end-rgb)]"
+      className="bg-gradient-to-b from-[var(--background-start-rgb)] via-[var(--background-middle-rgb)] to-[var(--background-end-rgb)] pb-12"
       style={gradientStyles as React.CSSProperties}
     >
       <div className=" inset-0 top-0">
