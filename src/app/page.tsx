@@ -16,6 +16,7 @@ import Button from "@/components/ui/button";
 import SpeechBubbleItem from "@/components/ui/speechBubbleItem";
 import SpeechBubbleWrapper from "@/components/ui/SpeechBubbleWrapper";
 import Image from "next/image";
+import SectionTitle from "../components/ui/section-title";
 
 export default function Home() {
   const contributorsGroups = groupContributorsBySection(contributors, 3);
@@ -56,6 +57,27 @@ export default function Home() {
 
       <GradientBackground mainColor={latestContributorsColor}>
         <ScreenEmojis contributors={contributorsGroups[0]} isTopSection />
+
+        <section className="mx-auto h-screen max-w-screen-lg px-4 py-32 text-center lg:px-20 lg:py-48">
+          <div className="relative">
+            <SectionTitle label="concept">
+              共同作業を実践し、GitHubに慣れる
+            </SectionTitle>
+            <p className="mt-8 text-gray-800 lg:text-lg lg:leading-loose">
+              GitやGitHubは、一人で学ぶのが難しいツールです。
+              <br />
+              バージョン管理やメッセージの書き方など、
+              <br />
+              個人での学習や開発ではその重要性を実感しにくいためです。
+              <br />
+              <br />
+              First Contributions
+              JAは、初学者向けに設計されたオープンなプロジェクトです。
+              <br />
+              チュートリアルに沿って、実際に共同開発を体験しながらGitHubを学べます！
+            </p>
+          </div>
+        </section>
 
         <ScreenEmojis contributors={contributorsGroups[1]} />
         <section className="mx-auto max-w-screen-xl px-4 lg:px-0">
