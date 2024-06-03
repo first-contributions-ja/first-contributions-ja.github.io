@@ -17,6 +17,7 @@ import SpeechBubbleItem from "@/components/ui/speechBubbleItem";
 import SpeechBubbleWrapper from "@/components/ui/SpeechBubbleWrapper";
 import Image from "next/image";
 import SectionTitle from "../components/ui/section-title";
+import SectionParagraph from "@/components/ui/section-paragraph";
 
 export default function Home() {
   const contributorsGroups = groupContributorsBySection(contributors, 3);
@@ -63,7 +64,7 @@ export default function Home() {
             <SectionTitle label="concept">
               共同作業を実践し、GitHubに慣れる
             </SectionTitle>
-            <p className="mt-8 text-gray-800 lg:text-lg lg:leading-loose">
+            <SectionParagraph className="mt-8">
               GitやGitHubは、一人で学ぶのが難しいツールです。
               <br />
               バージョン管理やメッセージの書き方など、
@@ -75,7 +76,7 @@ export default function Home() {
               JAは、初学者向けに設計されたオープンなプロジェクトです。
               <br />
               チュートリアルに沿って、実際に共同開発を体験しながらGitHubを学べます！
-            </p>
+            </SectionParagraph>
           </div>
         </section>
 
@@ -83,29 +84,42 @@ export default function Home() {
         <section className="mx-auto max-w-screen-xl px-4 lg:px-0">
           <SpeechBubbleWrapper>
             <SpeechBubbleItem>
-              <p>Help Wanted</p>
-              <h2>このWebサイトを、もっとPOPにしよう</h2>
+              <SectionTitle label="help wanted">
+                このWebサイトを、 もっとPOPにしよう！
+              </SectionTitle>
             </SpeechBubbleItem>
             <Image
               src={`${BASE_PATH}/img-code.png`}
-              width={640}
+              width={560}
               height={410}
               alt="test image"
-              className="overflow-hidden rounded-[24px]"
+              className="overflow-hidden rounded-[24px] lg:mt-4"
             />
             <SpeechBubbleItem>
-              チュートリアルは、実際にJSONファイルに変更を加えるシンプルな作業を行います。
+              <SectionParagraph className="lg:mt-4">
+                チュートリアルでは、このリポジトリのJSONファイルに、実際に変更を加えます。
+              </SectionParagraph>
             </SpeechBubbleItem>
+
             <SpeechBubbleItem>
-              それによって、あなたが入力した絵文字がこのサイト上に表示され、今よりもっとにぎやかで楽しい雰囲気をつ作り出します！
+              <SectionParagraph className="lg:mt-4">
+                それによって、入力した絵文字がこのサイト上に表示され、にぎやかで楽しい雰囲気を作り出します！
+              </SectionParagraph>
             </SpeechBubbleItem>
+
+            <Button className="mt-4 w-full">
+              <GitHubIcon className="text-2xl" />
+              詳しくみる
+            </Button>
           </SpeechBubbleWrapper>
         </section>
 
         <section className="mx-auto mt-8 max-w-screen-xl px-4 lg:px-0">
           <SpeechBubbleWrapper type="right">
             <SpeechBubbleItem type="right">
-              <p>面白そう🌈 でもなんだか、難しそう...😕</p>
+              <SectionParagraph>
+                面白そう🌈 でもなんだか、難しそう...😕
+              </SectionParagraph>
             </SpeechBubbleItem>
           </SpeechBubbleWrapper>
         </section>
