@@ -3,6 +3,7 @@ import { GITHUB_URL } from "../../../lib/constants";
 interface ButtonProps {
   type?: "primary" | "outline";
   href?: string;
+  className?: string;
   children: React.ReactNode;
 }
 
@@ -14,13 +15,19 @@ const OUTLINE_BUTTON_CLASS =
 const Button: React.FC<ButtonProps> = ({
   type = "primary",
   href = GITHUB_URL,
+  className = "",
   children,
 }) => {
   const buttonClass =
     type === "primary" ? PRIMARY_BUTTON_CLASS : OUTLINE_BUTTON_CLASS;
 
   return (
-    <a href={href} target="_blank" rel="noopener" className={buttonClass}>
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener"
+      className={`${className} ${buttonClass}`}
+    >
       {children}
     </a>
   );
