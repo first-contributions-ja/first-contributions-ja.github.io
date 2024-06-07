@@ -17,7 +17,6 @@ import SpeechBubbleItem from "@/components/ui/speechBubbleItem";
 import SpeechBubbleWrapper from "@/components/ui/SpeechBubbleWrapper";
 import Image from "next/image";
 import SectionTitle from "../components/ui/section-title";
-import SectionParagraph from "@/components/ui/section-paragraph";
 
 export default function Home() {
   const contributorsGroups = groupContributorsBySection(contributors, 3);
@@ -66,7 +65,7 @@ export default function Home() {
                 共同作業を実践し、GitHubに慣れる
               </div>
             </SectionTitle>
-            <SectionParagraph className="mt-8">
+            <p className="mt-8">
               GitやGitHubは、一人で学ぶのが難しいツールです。
               <br />
               バージョン管理やメッセージの書き方など、
@@ -78,7 +77,7 @@ export default function Home() {
               JAは、初学者向けに設計されたオープンなプロジェクトです。
               <br />
               チュートリアルに沿って、実際に共同開発を体験しながらGitHubを学べます！
-            </SectionParagraph>
+            </p>
           </div>
         </section>
 
@@ -99,15 +98,15 @@ export default function Home() {
             />
 
             <SpeechBubbleItem>
-              <SectionParagraph className="lg:mt-8">
+              <p className="lg:mt-8">
                 チュートリアルでは、このリポジトリのJSONファイルに、実際に変更を加えます。
-              </SectionParagraph>
+              </p>
             </SpeechBubbleItem>
 
             <SpeechBubbleItem>
-              <SectionParagraph className="lg:mt-2">
+              <p className="lg:mt-2">
                 それによって、入力した絵文字がこのサイト上に表示され、にぎやかで楽しい雰囲気を作り出します！
-              </SectionParagraph>
+              </p>
             </SpeechBubbleItem>
 
             <SpeechBubbleItem>
@@ -122,11 +121,7 @@ export default function Home() {
         <section className="mx-auto mt-8 max-w-screen-lg px-4 lg:px-0">
           <SpeechBubbleWrapper type="right">
             <SpeechBubbleItem type="right">
-              <SectionParagraph>
-                <span className="text-lg">
-                  面白そう🌈 でもなんだか、難しそう...😕
-                </span>
-              </SectionParagraph>
+              <p className="text-lg">面白そう🌈 でもなんだか、難しそう...😕</p>
             </SpeechBubbleItem>
           </SpeechBubbleWrapper>
         </section>
@@ -140,11 +135,11 @@ export default function Home() {
               </SectionTitle>
             </SpeechBubbleItem>
             <SpeechBubbleItem>
-              <SectionParagraph className="lg:mt-8">
+              <p className="lg:mt-8">
                 First Contributions JAに貢献（コントリビュート）することは、
                 <br />
                 他の様々なOSSに参加する流れを知ることにも繋がります。
-              </SectionParagraph>
+              </p>
             </SpeechBubbleItem>
             <SpeechBubbleItem>
               <div className="m-auto rounded-lg bg-gray-100 p-4 text-left font-bold lg:mt-8 lg:flex lg:w-fit lg:justify-center lg:gap-12 lg:p-12">
@@ -176,7 +171,7 @@ export default function Home() {
                 href="https://github.com/first-contributions-ja/first-contributions-ja.github.io?tab=readme-ov-file#%E5%8F%82%E5%8A%A0%E6%96%B9%E6%B3%95"
               >
                 <GitHubIcon className="text-2xl" />
-                詳細な手順をREAD.MEで確認
+                詳細な手順をREADMEで確認
               </Button>
             </SpeechBubbleItem>
           </SpeechBubbleWrapper>
@@ -185,10 +180,10 @@ export default function Home() {
         <section className="mx-auto mt-8 max-w-screen-lg px-4 lg:px-0">
           <SpeechBubbleWrapper type="right">
             <SpeechBubbleItem type="right">
-              <span className="text-lg">
+              <p className="text-lg">
                 OSSコントリビューションは思ったより簡単なんだ✨
                 今すぐ参加します💨
-              </span>
+              </p>
             </SpeechBubbleItem>
           </SpeechBubbleWrapper>
         </section>
