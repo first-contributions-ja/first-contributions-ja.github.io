@@ -59,10 +59,12 @@ export default function Home() {
       <GradientBackground mainColor={latestContributorsColor}>
         <ScreenEmojis contributors={contributorsGroups[0]} isTopSection />
 
-        <section className="mx-auto h-screen max-w-screen-lg px-4 py-32 text-center lg:px-20 lg:py-48">
+        <section className="mx-auto flex h-screen max-w-screen-lg items-center justify-center px-4 text-center">
           <div className="relative">
             <SectionTitle label="concept">
-              共同作業を実践し、GitHubに慣れる
+              <div className="lg:mt-4 lg:text-5xl">
+                共同作業を実践し、GitHubに慣れる
+              </div>
             </SectionTitle>
             <SectionParagraph className="mt-8">
               GitやGitHubは、一人で学ぶのが難しいツールです。
@@ -81,72 +83,112 @@ export default function Home() {
         </section>
 
         <ScreenEmojis contributors={contributorsGroups[1]} />
-        <section className="mx-auto max-w-screen-xl px-4 lg:px-0">
+        <section className="mx-auto max-w-screen-lg px-4 lg:px-0">
           <SpeechBubbleWrapper>
             <SpeechBubbleItem>
               <SectionTitle label="help wanted">
-                このWebサイトを、 もっとPOPにしよう！
+                このWebサイトを、もっとPOPにしよう！
               </SectionTitle>
             </SpeechBubbleItem>
             <Image
               src={`${BASE_PATH}/img-code.png`}
-              width={560}
-              height={410}
+              width={560 * 0.8}
+              height={410 * 0.8}
               alt="test image"
-              className="overflow-hidden rounded-[24px] lg:mt-4"
+              className="overflow-hidden rounded-[24px] lg:mx-auto lg:mt-8"
             />
+
             <SpeechBubbleItem>
-              <SectionParagraph className="lg:mt-4">
+              <SectionParagraph className="lg:mt-8">
                 チュートリアルでは、このリポジトリのJSONファイルに、実際に変更を加えます。
               </SectionParagraph>
             </SpeechBubbleItem>
 
             <SpeechBubbleItem>
-              <SectionParagraph className="lg:mt-4">
+              <SectionParagraph className="lg:mt-2">
                 それによって、入力した絵文字がこのサイト上に表示され、にぎやかで楽しい雰囲気を作り出します！
               </SectionParagraph>
             </SpeechBubbleItem>
 
-            <Button className="mt-4 w-full">
-              <GitHubIcon className="text-2xl" />
-              詳しくみる
-            </Button>
+            <SpeechBubbleItem>
+              <Button className="w-full lg:mx-auto lg:mt-8 lg:w-80">
+                <GitHubIcon className="text-2xl" />
+                リポジトリを確認
+              </Button>
+            </SpeechBubbleItem>
           </SpeechBubbleWrapper>
         </section>
 
-        <section className="mx-auto mt-8 max-w-screen-xl px-4 lg:px-0">
+        <section className="mx-auto mt-8 max-w-screen-lg px-4 lg:px-0">
           <SpeechBubbleWrapper type="right">
             <SpeechBubbleItem type="right">
               <SectionParagraph>
-                面白そう🌈 でもなんだか、難しそう...😕
+                <span className="text-lg">
+                  面白そう🌈 でもなんだか、難しそう...😕
+                </span>
               </SectionParagraph>
             </SpeechBubbleItem>
           </SpeechBubbleWrapper>
         </section>
 
         <ScreenEmojis contributors={contributorsGroups[2]} />
-        <section className="mx-auto mt-8 max-w-screen-xl px-4 lg:px-0">
+        <section className="mx-auto mt-8 max-w-screen-lg px-4 lg:px-0">
           <SpeechBubbleWrapper>
             <SpeechBubbleItem>
-              <p>Help Wanted</p>
-              <h2>このWebサイトを、もっとPOPにしよう</h2>
+              <SectionTitle label="good first issue">
+                初めてのOSSコントリビューションを体験しよう
+              </SectionTitle>
             </SpeechBubbleItem>
             <SpeechBubbleItem>
-              チュートリアルは、実際にJSONファイルに変更を加えるシンプルな作業を行います。
+              <SectionParagraph className="lg:mt-8">
+                First Contributions JAに貢献（コントリビュート）することは、
+                <br />
+                他の様々なOSSに参加する流れを知ることにも繋がります。
+              </SectionParagraph>
             </SpeechBubbleItem>
             <SpeechBubbleItem>
-              それによって、あなたが入力した絵文字がこのサイト上に表示され、今よりもっとにぎやかで楽しい雰囲気をつ作り出します！
+              <div className="m-auto rounded-lg bg-gray-100 p-4 text-left font-bold lg:mt-8 lg:flex lg:w-fit lg:justify-center lg:gap-12 lg:p-12">
+                <div>
+                  <h4 className="text-red-600">STEP1</h4>
+                  <p>プロジェクトをフォーク</p>
+                  <h4 className="mt-2 text-red-600">STEP2</h4>
+                  <p>ローカルマシーンへクローン</p>
+                  <h4 className="mt-2 text-red-600">STEP3</h4>
+                  <p>作業用ブランチを作成</p>
+                  <h4 className="mt-2 text-red-600">STEP4</h4>
+                  <p>変更を加える</p>
+                </div>
+                <div>
+                  <h4 className="mt-2 text-red-600 lg:mt-0">STEP5</h4>
+                  <p>変更をコミット</p>
+                  <h4 className="mt-2 text-red-600">STEP6</h4>
+                  <p>変更をプッシュ</p>
+                  <h4 className="mt-2 text-red-600">STEP7</h4>
+                  <p>プルリクエストを作成</p>
+                  <h4 className="mt-2 text-red-600">STEP8</h4>
+                  <p>レビューとフィードバックに対応</p>
+                </div>
+              </div>
+            </SpeechBubbleItem>
+            <SpeechBubbleItem>
+              <Button
+                className="w-full lg:mx-auto lg:mt-8 lg:w-80"
+                href="https://github.com/first-contributions-ja/first-contributions-ja.github.io?tab=readme-ov-file#%E5%8F%82%E5%8A%A0%E6%96%B9%E6%B3%95"
+              >
+                <GitHubIcon className="text-2xl" />
+                詳細な手順をREAD.MEで確認
+              </Button>
             </SpeechBubbleItem>
           </SpeechBubbleWrapper>
         </section>
 
-        <section className="mx-auto mt-8 max-w-screen-xl px-4 lg:px-0">
+        <section className="mx-auto mt-8 max-w-screen-lg px-4 lg:px-0">
           <SpeechBubbleWrapper type="right">
             <SpeechBubbleItem type="right">
-              <p>
+              <span className="text-lg">
                 OSSコントリビューションは思ったより簡単なんだ✨
                 今すぐ参加します💨
-              </p>
+              </span>
             </SpeechBubbleItem>
           </SpeechBubbleWrapper>
         </section>

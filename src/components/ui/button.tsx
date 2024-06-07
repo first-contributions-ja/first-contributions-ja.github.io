@@ -8,9 +8,9 @@ interface ButtonProps {
 }
 
 const PRIMARY_BUTTON_CLASS =
-  "flex h-12 w-40 items-center justify-center gap-2 rounded-full bg-red-600 px-4 text-center text-white duration-300 hover:opacity-60";
+  "flex min-h-12 w-40 items-center justify-center gap-2 rounded-full bg-red-600 px-4 text-center text-white duration-300 hover:opacity-60";
 const OUTLINE_BUTTON_CLASS =
-  "flex h-12 w-40 items-center justify-center gap-2 rounded-full border border-stone-800 bg-white px-4 text-red-600 duration-300 hover:opacity-60";
+  "flex min-h-12 w-40 items-center justify-center gap-2 rounded-full border border-stone-800 bg-white px-4 text-red-600 duration-300 hover:opacity-60";
 
 const Button: React.FC<ButtonProps> = ({
   type = "primary",

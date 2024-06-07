@@ -5,9 +5,7 @@ interface SectionParagraphProps {
 function SectionParagraph(props: SectionParagraphProps) {
   return (
     <>
-      <p className={`lg:text-lg lg:leading-loose ${props.className}`}>
-        {props.children}
-      </p>
+      <p className={`${props.className}`}>{props.children}</p>
     </>
   );
 }

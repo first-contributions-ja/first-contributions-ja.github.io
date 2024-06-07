@@ -8,7 +8,7 @@ interface SpeechBubbleWrapperProps {
 const BASE_CLASS = "flex w-full flex-col gap-4 lg:block";
 
 const PC_CLASS =
-  "lg:rounded-[64px] lg:p-[48px] lg:w-11/12 lg:w-fit relative lg:shadow-lg lg:shadow-neutral-950/5";
+  "lg:rounded-[64px] lg:p-[48px] relative lg:shadow-lg lg:shadow-neutral-950/5 lg:text-center";
 
 const SpeechBubbleWrapper: React.FC<SpeechBubbleWrapperProps> = ({
   type = "left",
@@ -18,13 +18,14 @@ const SpeechBubbleWrapper: React.FC<SpeechBubbleWrapperProps> = ({
   const alignItems = leftIs ? "" : "items-end lg:ml-auto lg:mr-0";
   const bgColor = leftIs ? "lg:bg-white" : "lg:bg-gray-800";
   const textColor = leftIs ? "" : "lg:text-white";
+  const width = leftIs ? "lg:w-11/12" : "lg:w-fit";
   const speechBubbleArrowDirection = leftIs
     ? "speechBubbleArrowPCLeft"
     : "speechBubbleArrowPCRight";
 
   return (
     <div
-      className={`${BASE_CLASS} ${PC_CLASS} ${alignItems} ${bgColor} ${textColor}`}
+      className={`${BASE_CLASS} ${PC_CLASS} ${alignItems} ${bgColor} ${textColor} ${width}`}
     >
       <div
         className={`${speechBubbleArrowDirection} ${bgColor} absolute`}
