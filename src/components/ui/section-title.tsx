@@ -5,8 +5,10 @@ interface SectionTitleProps {
 function SectionTitle(props: SectionTitleProps) {
   return (
     <>
-      <p className="text-lg uppercase text-red-600">{props.label}</p>
-      <h2 className="mt-8 text-3xl font-bold leading-snug lg:text-5xl lg:leading-normal">
+      <p className="text-sm uppercase text-red-600 lg:text-base">
+        {props.label}
+      </p>
+      <h2 className="mt-2 text-2xl font-bold leading-snug lg:mt-2 lg:text-4xl lg:leading-normal">
         {props.children}
       </h2>
     </>
