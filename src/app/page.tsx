@@ -26,7 +26,7 @@ export default function Home() {
       <section className="relative h-screen overflow-hidden">
         <EmojiShower />
         <div className="absolute bottom-0 left-0 h-20 w-full bg-gradient-to-t from-white to-transparent"></div>
-        <div className="relative z-10 mx-auto flex h-full items-center justify-start lg:max-w-screen-xl">
+        <div className="relative mx-auto flex h-full items-center justify-start lg:max-w-screen-xl">
           <div className=" px-4 lg:px-0">
             <h1 className="text-4xl font-bold leading-snug lg:text-6xl lg:leading-normal">
               オープンソース
