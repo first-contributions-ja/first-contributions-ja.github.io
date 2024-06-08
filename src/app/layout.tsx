@@ -43,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
+    <html lang="ja" className="overflow-x-hidden">
       <body
         className={`${inter.variable} ${notojp.variable} overflow-x-hidden text-stone-800`}
       >
