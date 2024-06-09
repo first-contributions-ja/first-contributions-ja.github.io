@@ -1,3 +1,4 @@
+import { emojiToUnicodeHex } from "@/utils/animated-emoji";
 import { Noto_Emoji } from "next/font/google";
 
 const emojiFont = Noto_Emoji({
@@ -112,15 +113,17 @@ const EmojiShower: React.FC = () => {
   return (
     <div className=" absolute -right-2 -top-8 z-0 flex h-[150vh] rotate-12 lg:-top-[15vh] lg:right-4 lg:rotate-[25deg]">
       {randomEmojis.map((emoji, index) => {
+        const notoEmoji = emojiToUnicodeHex(emoji);
         return (
           <div
             key={index}
             className={`${emojiFont.className} ${textRainbowColors[index]} ${bgRainbowColors[index]}
               px-1 text-3xl lg:px-2 lg:text-6xl`}
           >
-            <div className={`${animationsSp[index]} ${animationsPc[index]}`}>
-              {emoji}
-            </div>
+            <div
+              className={`${animationsSp[index]} ${animationsPc[index]}`}
+              dangerouslySetInnerHTML={{ __html: notoEmoji }}
+            ></div>
           </div>
         );
       })}
