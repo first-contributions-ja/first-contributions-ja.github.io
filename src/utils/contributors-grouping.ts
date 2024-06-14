@@ -1,8 +1,6 @@
-import contributors from "../../Contributors.json";
-
-const latestContributorsColor = contributors[0].favoriteColor;
-
-type contributor = typeof contributors;
+import contributorsReversed from "../utils/contributors-reversed";
+const latestContributorsColor = contributorsReversed[0].favoriteColor;
+type contributor = typeof contributorsReversed;
 
 const SECTION_SIZE = 10;
 

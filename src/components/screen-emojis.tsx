@@ -1,5 +1,5 @@
 import AnimatedEmoji from "./animated-emoji";
-import contributors from "../../Contributors.json";
+import contributorsReversed from "../utils/contributors-reversed";
 import { Noto_Emoji } from "next/font/google";
 
 const emoji = Noto_Emoji({
@@ -9,7 +9,7 @@ const emoji = Noto_Emoji({
 });
 
 type ScreenEmojisProps = {
-  contributors: typeof contributors;
+  contributors: typeof contributorsReversed;
   isTopSection?: boolean;
 };
 

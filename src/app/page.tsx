@@ -6,8 +6,7 @@ import { TWITTER_SHARE } from "../../lib/constants";
 import GradientBackground from "@/components/gradient-background";
 import ScreenEmojis from "@/components/screen-emojis";
 import EmojiShower from "@/components/hero-section-emoji-shower";
-
-import contributors from "../../Contributors.json";
+import contributorsReversed from "../utils/contributors-reversed";
 import {
   groupContributorsBySection,
   latestContributorsColor,
@@ -19,7 +18,10 @@ import Image from "next/image";
 import SectionTitle from "../components/ui/section-title";
 
 export default function Home() {
-  const contributorsGroups = groupContributorsBySection(contributors, 3);
+  const contributorsGroups = groupContributorsBySection(
+    contributorsReversed,
+    3,
+  );
 
   return (
     <>
