@@ -3,13 +3,13 @@ import {
   getAnimationStyles,
   getEmojiSize,
 } from "@/utils/animated-emoji";
-import contributors from "../../Contributors.json";
+import contributorsReversed from "../utils/contributors-reversed";
 import { latestContributorsColor } from "@/utils/contributors-grouping";
 import { hexToRgb } from "@/utils/background-color";
 
 type AnimatedEmojiProps = {
   index: number;
-  contributor: (typeof contributors)[number];
+  contributor: (typeof contributorsReversed)[number];
   size?: "small" | "medium" | "large";
   isTopSection?: boolean;
 };
