@@ -201,14 +201,15 @@ GitHub 上でファイルを編集することも可能ですが、<br>
   git status
   ```
 - それでは Contributors.json ファイルに変更を加えます。
-  - **Contributors.json ファイルの「リストの先頭」に、以下のコードをコピーして貼り付けます。**
+  - **Contributors.json ファイルの「リストの末尾」に、以下のコードをコピーして貼り付けます。**
   ```
+  ,
   {
     "name": "あなたのハンドルネーム",
     "github": "あなたのGitHubアカウントのURL",
     "favoriteColor": "あなたの好きなカラーコード",
     "favoriteEmoji": "あなたの好きな絵文字"
-  },
+  }
   ```
 
 <p align="center">
@@ -220,15 +221,15 @@ GitHub 上でファイルを編集することも可能ですが、<br>
   - 例えば、全て置き換えたら以下のようになります：
   ```
   <!-- 変更後 -->
-  [
+    ~~
+    },
     {
       "name": "oginochihiro",
       "github": "https://github.com/first-contributions-ja",
       "favoriteColor": "#ffffff",
       "favoriteEmoji": "🐉"
-    },
-    {
-     〜〜
+    }
+  ]
   ```
 
 ---
