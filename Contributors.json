@@ -122,7 +122,13 @@
   {
     "name": "nemuki",
     "github": "https://github.com/nemuki",
-    "favoriteColor": "ff5606",
+    "favoriteColor": "#ff5606",
     "favoriteEmoji": "🏮"
+  },
+  {
+    "name": "You-saku",
+    "github": "https://github.com/You-saku",
+    "favoriteColor": "#3cb371",
+    "favoriteEmoji": "♨"
   }
 ]
