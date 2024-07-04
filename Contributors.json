@@ -138,10 +138,10 @@
     "favoriteEmoji": "🌚"
   },
   {
-  "name": "4bntw",
-  "github": "https://github.com/4bntw",
-  "favoriteColor": "#fdc509",
-  "favoriteEmoji": "🗿"
+    "name": "4bntw",
+    "github": "https://github.com/4bntw",
+    "favoriteColor": "#fdc509",
+    "favoriteEmoji": "🗿"
   },
   {
     "name": "solaio",
@@ -149,7 +149,7 @@
     "favoriteColor": "#ff5f15",
     "favoriteEmoji": "😴"
   },
-   {
+  {
     "name": "dxpc98fdd",
     "github": "https://github.com/dxpc98fdd",
     "favoriteColor": "#c90808",
@@ -160,6 +160,12 @@
     "github": "https://github.com/balckowl",
     "favoriteColor": "#afeeee",
     "favoriteEmoji": "😑"
+  },
+  {
+    "name": "honeuwo",
+    "github": "https://github.com/honeuwo",
+    "favoriteColor": "#b1dc03",
+    "favoriteEmoji": "🚴‍♂️"
   }
 ]
 
