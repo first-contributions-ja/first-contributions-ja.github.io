@@ -16,11 +16,12 @@ import SpeechBubbleItem from "@/components/ui/speechBubbleItem";
 import SpeechBubbleWrapper from "@/components/ui/SpeechBubbleWrapper";
 import Image from "next/image";
 import SectionTitle from "../components/ui/section-title";
+import { emojiToUnicodeHex } from "@/utils/animated-emoji";
 
 export default function Home() {
   const contributorsGroups = groupContributorsBySection(
     contributorsReversed,
-    3,
+    4,
   );
 
   return (
@@ -186,6 +187,55 @@ export default function Home() {
                 OSSコントリビューションは思ったより簡単なんだ✨
                 今すぐ参加します💨
               </p>
+            </SpeechBubbleItem>
+          </SpeechBubbleWrapper>
+        </section>
+
+        <ScreenEmojis contributors={contributorsGroups[3]} />
+        <section className="mx-auto flex h-screen max-w-screen-lg items-center px-4 lg:px-0">
+          <SpeechBubbleWrapper type="left">
+            <SpeechBubbleItem>
+              <div className="text-center">
+                <p className="inline-block bg-stone-100 px-4 py-2">
+                  <span className="text-2xl font-bold text-red-600">
+                    {contributorsReversed.length}
+                  </span>
+                  人が参加中！
+                </p>
+                <p className="text-4xl font-bold leading-snug lg:text-6xl lg:leading-normal">
+                  DOMO ARIGATO !!
+                </p>
+                <p
+                  className="text- mt-8 stroke-gray-500   font-notoEmoji text-9xl font-extrabold"
+                  style={{ color: latestContributorsColor }}
+                  dangerouslySetInnerHTML={{ __html: emojiToUnicodeHex("🎉") }}
+                ></p>
+              </div>
+            </SpeechBubbleItem>
+            <SpeechBubbleItem>
+              <p className="lg:mt-8">
+                First Contributions JAは、
+                <br className="lg:hidden" />
+                オープンなプロジェクトです。
+                <br />
+                そして、最高のコントリビューターに支えられています :)
+              </p>
+            </SpeechBubbleItem>
+            <SpeechBubbleItem>
+              <div className="flex flex-col items-center justify-center gap-4 lg:mt-8 lg:flex-row">
+                <Button className="w-full lg:w-40">
+                  <GitHubIcon className="text-2xl" />
+                  GitHub
+                </Button>
+                <Button
+                  type="outline"
+                  href={TWITTER_SHARE}
+                  className="w-full lg:w-40"
+                >
+                  <ShareIcon className="text-2xl" />
+                  Share
+                </Button>
+              </div>
             </SpeechBubbleItem>
           </SpeechBubbleWrapper>
         </section>
