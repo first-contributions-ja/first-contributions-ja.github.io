@@ -1,12 +1,5 @@
 import AnimatedEmoji from "./animated-emoji";
 import contributorsReversed from "../utils/contributors-reversed";
-import { Noto_Emoji } from "next/font/google";
-
-const emoji = Noto_Emoji({
-  subsets: ["emoji"],
-  weight: "300",
-  display: "swap",
-});
 
 type ScreenEmojisProps = {
   contributors: typeof contributorsReversed;
@@ -19,7 +12,7 @@ const ScreenEmojis: React.FC<ScreenEmojisProps> = ({
 }) => {
   return (
     <>
-      <div className={`${emoji.className} relative`}>
+      <div className="relative font-notoEmoji">
         {contributors.map((contributor, index) => (
           <AnimatedEmoji
             key={index}
