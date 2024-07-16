@@ -1,4 +1,3 @@
-import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -9,7 +8,11 @@ const config: Config = {
     "./src/utils/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        notoEmoji: ["var(--font-noto-emoji)"],
+      },
+    },
     keyframes: {
       horizontal: {
         from: {
