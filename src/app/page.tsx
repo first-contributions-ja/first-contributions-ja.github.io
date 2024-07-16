@@ -202,11 +202,13 @@ export default function Home() {
                   </span>
                   人が参加中！
                 </p>
-                <p className="text-4xl font-bold leading-snug lg:text-6xl lg:leading-normal">
-                  DOMO ARIGATO !!
+                <p className="mt-4 text-4xl font-bold lg:text-6xl">
+                  DOMO
+                  <br className="lg:hidden" />
+                  ARIGATO !!
                 </p>
                 <p
-                  className="text- mt-8 stroke-gray-500   font-notoEmoji text-9xl font-extrabold"
+                  className="mb-2 mt-8 stroke-gray-500 font-notoEmoji text-9xl"
                   style={{ color: latestContributorsColor }}
                   dangerouslySetInnerHTML={{ __html: emojiToUnicodeHex("🎉") }}
                 ></p>
