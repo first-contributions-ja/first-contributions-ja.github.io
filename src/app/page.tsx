@@ -203,8 +203,7 @@ export default function Home() {
                   人が参加中！
                 </p>
                 <p className="mt-4 text-4xl font-bold lg:text-6xl">
-                  DOMO
-                  <br className="lg:hidden" />
+                  DOMO <br className="lg:hidden" />
                   ARIGATO !!
                 </p>
                 <p
