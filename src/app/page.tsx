@@ -207,8 +207,7 @@ export default function Home() {
                   ARIGATO !!
                 </p>
                 <p
-                  className="mb-2 mt-8 stroke-gray-500 font-notoEmoji text-9xl"
-                  style={{ color: latestContributorsColor }}
+                  className="mb-2 mt-8 font-notoEmoji text-9xl text-red-600"
                   dangerouslySetInnerHTML={{ __html: emojiToUnicodeHex("🎉") }}
                 ></p>
               </div>
