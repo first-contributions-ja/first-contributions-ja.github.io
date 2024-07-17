@@ -208,7 +208,6 @@ export default function Home() {
                 </p>
                 <p
                   className="mb-2 mt-8 stroke-gray-500 font-notoEmoji text-9xl"
-                  style={{ color: latestContributorsColor }}
                   dangerouslySetInnerHTML={{ __html: emojiToUnicodeHex("🎉") }}
                 ></p>
               </div>

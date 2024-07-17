@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        notoEmoji: ["var(--font-noto-emoji)"],
+        notoEmoji: ["var(--font-noto-color-emoji), var(--font-noto-emoji)"],
       },
     },
     keyframes: {

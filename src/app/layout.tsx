@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { SITE_NAME, SITE_URL, SITE_DESC } from "../../lib/constants";
-import { Inter, Noto_Sans_JP, Noto_Color_Emoji } from "next/font/google";
+import {
+  Inter,
+  Noto_Sans_JP,
+  Noto_Color_Emoji,
+  Noto_Emoji,
+} from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
@@ -15,7 +20,14 @@ const notojp = Noto_Sans_JP({
   variable: "--font-notojp",
 });
 
-const emoji = Noto_Color_Emoji({
+const notoColorEmoji = Noto_Color_Emoji({
+  subsets: ["emoji"],
+  weight: "400",
+  display: "swap",
+  variable: "--font-noto-color-emoji",
+});
+
+const notoEmoji = Noto_Emoji({
   subsets: ["emoji"],
   weight: "400",
   display: "swap",
@@ -52,7 +64,7 @@ export default function RootLayout({
   return (
     <html lang="ja" className="overflow-x-hidden">
       <body
-        className={`${inter.variable} ${notojp.variable} ${emoji.variable} overflow-x-hidden text-stone-800`}
+        className={`${inter.variable} ${notojp.variable} ${notoEmoji.variable} ${notoColorEmoji.variable} overflow-x-hidden text-stone-800`}
       >
         <Header />
         {children}
