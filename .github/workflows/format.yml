@@ -2,8 +2,9 @@ name: Format Code
 
 on:
   pull_request:
-    branches:
-      - main
+    types:
+      - opened
+  workflow_dispatch:
 
 jobs:
   format:
