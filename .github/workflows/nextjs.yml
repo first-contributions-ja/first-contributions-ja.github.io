@@ -26,6 +26,39 @@ concurrency:
 
 jobs:
   # Build job
+
+
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          ref: ${{ github.head_ref }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Prettier
+        run: npm run format
+
+      - name: Run Linter
+        run: npm run lint
+
+      - name: Check for formatting changes
+        run: git diff --exit-code
+        continue-on-error: true
+      
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Apply changes
+    
+
   build:
     runs-on: ubuntu-latest
     steps:
@@ -73,17 +106,6 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-
-      - name: Run Prettier
-        run: npm run format
-
-      - name: Run Linter
-        run: npm run lint
-
-      - name: Check for formatting changes
-        run: git diff --exit-code
-        continue-on-error: true
-
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
