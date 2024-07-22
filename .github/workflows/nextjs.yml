@@ -73,6 +73,21 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+
+      - name: Run Prettier
+        run: npm run format
+
+      - name: Run Linter
+        run: npm run lint
+
+      - name: Check for formatting changes
+        run: git diff --exit-code
+        continue-on-error: true
+      
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Apply changes
+
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
