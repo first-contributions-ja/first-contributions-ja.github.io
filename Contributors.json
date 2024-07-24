@@ -228,15 +228,15 @@
     "favoriteEmoji": "🐻"
   },
   {
-    "name": "test2",
-    "github": "https://github.com/ogane0112",
-    "favoriteColor": "#98fb98",
-    "favoriteEmoji": "🐻"
-  },
-  {
-    "name": "testtetetetetest",
-    "github": "https://github.com/ogane0112",
-    "favoriteColor": "#98fb98",
+  "name": "test2",
+  "github": "https://github.com/ogane0112",
+  "favoriteColor": "#98fb98",
+  "favoriteEmoji": "🐻"
+},
+{
+  "name": "testtetetetetest",
+  "github": "https://github.com/ogane0112",
+  "favoriteColor": "#98fb98",
     "favoriteEmoji": "🐻"
   }
 ]
