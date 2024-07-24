@@ -205,9 +205,9 @@
   },
   {
     "name": "shige",
-    "github": "https://github.com/shige-99",
-    "favoriteColor": "#2b5f2a",
-    "favoriteEmoji": "👳🏻‍♂️"
+          "github": "https://github.com/shige-99",
+          "favoriteColor": "#2b5f2a",
+          "favoriteEmoji": "👳🏻‍♂️"
   },
   {
     "name": "ogane0112",
@@ -228,9 +228,15 @@
     "favoriteEmoji": "🐻"
   },
   {
-    "name": "test2",
-    "github": "https://github.com/ogane0112",
-    "favoriteColor": "#98fb98",
+"name": "test2",
+"github": "https://github.com/ogane0112",
+"favoriteColor": "#98fb98",
     "favoriteEmoji": "🐻"
+  },
+  {
+"name": "testtetetetetest",
+"github": "https://github.com/ogane0112",
+"favoriteColor": "#98fb98",
+"favoriteEmoji": "🐻"
   }
 ]
