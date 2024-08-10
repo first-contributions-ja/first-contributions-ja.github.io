@@ -220,19 +220,23 @@
     "github": "https://github.com/Int314",
     "favoriteColor": "#373C38",
     "favoriteEmoji": "🥰"
-  }
-  ,
+  },
   {
-  "name": "syn_scene",
-  "github": "https://github.com/synscean",
-  "favoriteColor": "#8ae7fb",
-  "favoriteEmoji": "🥺"
-  }
-  ,
+    "name": "syn_scene",
+    "github": "https://github.com/synscean",
+    "favoriteColor": "#8ae7fb",
+    "favoriteEmoji": "🥺"
+  },
   {
-  "name": "atnuhs",
-  "github": "https://github.com/atnuhs-1",
-  "favoriteColor": "#00ced1",
-  "favoriteEmoji": "👁"
+    "name": "atnuhs",
+    "github": "https://github.com/atnuhs-1",
+    "favoriteColor": "#00ced1",
+    "favoriteEmoji": "👁"
+  },
+  {
+    "name": "dws2020",
+    "github": "https://github.com/dws2020",
+    "favoriteColor": "#ffffff",
+    "favoriteEmoji": "🐼"
   }
 ]
