@@ -12,12 +12,6 @@
     "favoriteEmoji": "🌀"
   },
   {
-    "name": "kazzyfrog",
-    "github": "https://github.com/kazzyfrog",
-    "favoriteColor": "#98fb98",
-    "favoriteEmoji": "🐸"
-  },
-  {
     "name": "oginochihiro",
     "github": "https://github.com/first-contributions-ja",
     "favoriteColor": "#ffffff",
@@ -238,5 +232,11 @@
     "github": "https://github.com/dws2020",
     "favoriteColor": "#ffffff",
     "favoriteEmoji": "🐼"
+  },
+  {
+    "name": "kazzyfrog",
+    "github": "https://github.com/kazzyfrog",
+    "favoriteColor": "#C6BA9F",
+    "favoriteEmoji": "🐸"
   }
 ]
