@@ -12,16 +12,16 @@ const groupContributorsBySection = (
     0,
     SECTION_SIZE * numSections,
   );
-  const sctionGroups = [];
+  const sectionGroups = [];
 
   for (let i = 0; i < numSections; i++) {
     const start = i * SECTION_SIZE;
     const end = start + SECTION_SIZE;
     const group = contributorsToDisplay.slice(start, end);
-    sctionGroups.push(group);
+    sectionGroups.push(group);
   }
 
-  return sctionGroups;
+  return sectionGroups;
 };
 
 export { latestContributorsColor, groupContributorsBySection };
