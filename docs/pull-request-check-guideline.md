@@ -25,12 +25,12 @@
 
 ## 修正事例
 
-何か特殊な修正があった場合、こちらに書き残してください。
+共有すべき修正事例があればこちらに追加してください。
 
 ### 絵文字が2文字
 
 - 関連 Issue、プルリク
-  - #231
+  - [#231](https://github.com/first-contributions-ja/first-contributions-ja.github.io/pull/231)
 - 原因・仮説
   - おそらくWindows特有の絵文字が指定されたことにより、2文字になっている
 - 対応
