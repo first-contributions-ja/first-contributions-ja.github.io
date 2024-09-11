@@ -260,7 +260,13 @@
   {
     "name": "hakuin",
     "github": "https://github.com/hakuini",
-    "favoriteColor": "#438e96",
+    "favoriteColor": "🐈",
     "favoriteEmoji": "🥹"
+  },
+  {
+    "name": "ichiburn",
+    "github": "https://github.com/ichiburn",
+    "favoriteColor": "#b5402b",
+    "favoriteEmoji": "🐈"
   }
 ]
