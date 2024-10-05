@@ -1,3 +1,6 @@
+<p align='center'>
+  日本語 | <a href='./docs/README_EN.md'>🚧 English</a>
+</p>
 <p align="center">
   <img src="/docs/images/img-readme-header.png">
 </p>
