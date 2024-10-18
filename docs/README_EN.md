@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/first_contributions-%F0%9F%94%B0-white?style=flat" alt="Static Badge">
 </p>
 
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)][twttr-share]
+![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)
 
 > Start your OSS activities with a tutorial in full Japanese 🚀
 
