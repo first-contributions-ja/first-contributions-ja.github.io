@@ -390,4 +390,4 @@ This project is licensed under the [MIT LICENSE](/LICENSE).
 
 This project is inspired by great open source projects designed for beginners, such as [first-contributions](https://github.com/firstcontributions/first-contributions) and [Contribute-To-This-Project](https://github.com/Syknapse/Contribute-To-This-Project).
 
-[twttr-share]: https://twitter.com/intent/tweet?text=Start your OSS activities with a tutorial in full Japanese🚀&url=https://github.com/first-contributions-ja/first-contributions-ja.github.io&hashtags=Programming 'Tweet this project'
+[twttr-share]:%20https://twitter.com/intent/tweet?text=Start%20your%20OSS%20activities%20with%20a%20tutorial%20in%20full%20Japanese🚀&url=https://github.com/first-contributions-ja/first-contributions-ja.github.io&hashtags=Programming 'Tweet this project'
