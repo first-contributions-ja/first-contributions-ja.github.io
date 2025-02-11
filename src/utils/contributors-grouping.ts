@@ -1,5 +1,14 @@
 import contributorsReversed from "../utils/contributors-reversed";
-const latestContributorsColor = contributorsReversed[0].favoriteColor;
+
+// デフォルトの背景色(特に理由はないので変更可)
+const DEFAULT_BACKGROUND_COLOR = "#C6BA9F";
+
+// FFF（白）の場合、safariで背景と絵文字が見えなくなるので、デフォルトを適用
+const latestContributorsColor =
+  contributorsReversed[0].favoriteColor.toLowerCase() === "#ffffff"
+    ? DEFAULT_BACKGROUND_COLOR
+    : contributorsReversed[0].favoriteColor;
+
 type contributor = typeof contributorsReversed;
 
 const SECTION_SIZE = 10;
