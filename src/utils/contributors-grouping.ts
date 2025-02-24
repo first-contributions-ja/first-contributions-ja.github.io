@@ -5,7 +5,8 @@ const DEFAULT_BACKGROUND_COLOR = "#C6BA9F";
 
 // FFF（白）の場合、safariで背景と絵文字が見えなくなるので、デフォルトを適用
 const latestContributorsColor =
-  contributorsReversed[0].favoriteColor.toLowerCase() === "#ffffff"
+  contributorsReversed[0].favoriteColor.toLowerCase() === "#ffffff" ||
+  contributorsReversed[0].favoriteColor.toLowerCase() === "#fff"
     ? DEFAULT_BACKGROUND_COLOR
     : contributorsReversed[0].favoriteColor;
 
