@@ -306,12 +306,6 @@
     "favoriteEmoji": "🤪"
   },
   {
-    "name": "kazzyfrog",
-    "github": "https://github.com/kazzyfrog",
-    "favoriteColor": "#ddcfb1",
-    "favoriteEmoji": "🐸"
-  },
-  {
     "name": "as",
     "github": "https://github.com/a-suzuki8888",
     "favoriteColor": "#fbbfcd",
@@ -382,5 +376,11 @@
     "github": "https://github.com/kopo-k",
     "favoriteColor": "#f4f8fd",
     "favoriteEmoji": "🌸"
+  },
+  {
+    "name": "kazzyfrog",
+    "github": "https://github.com/kazzyfrog",
+    "favoriteColor": "#C6BA9F",
+    "favoriteEmoji": "🐸"
   }
 ]
