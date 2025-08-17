@@ -425,10 +425,16 @@
     "favoriteColor": "#1E90FF",
     "favoriteEmoji": "✌️"
   },
-    {
+  {
     "name": "ogahuku",
     "github": "https://github.com/ogahuku",
     "favoriteColor": "#7fffd4",
     "favoriteEmoji": "🪽"
+  },
+  {
+    "name": "daigo",
+    "github": "https://github.com/daigo1123",
+    "favoriteColor": "#1f6feb",
+    "favoriteEmoji": "🐶"
   }
 ]
