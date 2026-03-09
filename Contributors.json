@@ -545,7 +545,7 @@
     "favoriteColor": "#000000",
     "favoriteEmoji": "👾"
   },
-  { 
+  {
     "name": "kyo",
     "github": "https://github.com/Kyo-page",
     "favoriteColor": "#FFA6B4",
@@ -562,5 +562,11 @@
     "github": "https://github.com/ShotaKubota-Jp",
     "favoriteColor": "#FFFFFF",
     "favoriteEmoji": "🎌"
+  },
+  {
+    "name": "tttttkaku",
+    "github": "https://github.com/tttttkaku",
+    "favoriteColor": "#228B22",
+    "favoriteEmoji": "🍰"
   }
 ]
