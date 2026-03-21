@@ -570,9 +570,15 @@
     "favoriteEmoji": "🍰"
   },
   {
+    "name": "pomitan",
+    "github": "https://github.com/pomitan",
+    "favoriteColor": "#ff9328",
+    "favoriteEmoji": "📱"
+  },
+  {
     "name": "koji-ron",
     "github": "https://github.com/kohzih",
     "favoriteColor": "#4169e1",
     "favoriteEmoji": "🥷"
-  }
+  },
 ]
