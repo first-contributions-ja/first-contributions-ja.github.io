@@ -379,3 +379,4 @@ GitHub 上でファイルを編集することも可能ですが、<br>
 初心者向けに設計された素晴らしいオープンソースプロジェクトから影響を受けています。
 
 [twttr-share]: https://twitter.com/intent/tweet?text=完全日本語のチュートリアルで、OSS活動を始める🚀&url=https://github.com/first-contributions-ja/first-contributions-ja.github.io&hashtags=プログラミング 'Tweet this project'
+- [Khairil](https://github.com/kaizeenn)
