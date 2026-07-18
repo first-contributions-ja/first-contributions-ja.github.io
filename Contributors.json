@@ -636,9 +636,15 @@
     "favoriteEmoji": "🦈"
   },
   {
-  "name": "Kazuhito Miyamoto",
-  "github": "https://github.com/KazuhitoMiyamoto",
-  "favoriteColor": "#4A90E2",
-  "favoriteEmoji": "🐸"
-}
+    "name": "Kazuhito Miyamoto",
+    "github": "https://github.com/KazuhitoMiyamoto",
+    "favoriteColor": "#4A90E2",
+    "favoriteEmoji": "🐸"
+  },
+  {
+    "name": "Hamaya-Mitsuharu",
+    "github": "https://github.com/Hamaya-Mitsuharu",
+    "favoriteColor": "#ffd700",
+    "favoriteEmoji": "🐰"
+  }
 ]
