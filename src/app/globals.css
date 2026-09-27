@@ -3,8 +3,16 @@
 @tailwind utilities;
 
 body {
+  --font-emoji: var(--font-noto-emoji);
   font-family: var(--font-inter), var(--font-notojp);
   @apply text-zinc-900;
+}
+
+/* Safari can load COLRv1 fonts without rendering them or using the fallback. */
+@supports font-tech(color-COLRv1) {
+  body {
+    --font-emoji: var(--font-noto-color-emoji), var(--font-noto-emoji);
+  }
 }
 
 .speechBubbleArrowLeft {
