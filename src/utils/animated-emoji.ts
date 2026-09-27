@@ -29,11 +29,17 @@ const getAnimationStyles = (index: number, speed: number) => {
 };
 
 const emojiToUnicodeHex = (emoji: string) => {
-  const codePoint = emoji.codePointAt(0);
-  if (codePoint === undefined) {
+  if (emoji.length === 0) {
     throw new Error("Invalid emoji input");
   }
-  return `&#x${codePoint.toString(16).toUpperCase()};&#xfe0f;`;
+  // FE0F forces color presentation and bypasses Noto Emoji's monochrome glyphs.
+  // Preserve the remaining sequence, including ZWJ, skin tones, and flag pairs.
+  return Array.from(emoji.replace(/\uFE0F/g, ""))
+    .map(
+      (character) =>
+        `&#x${character.codePointAt(0)!.toString(16).toUpperCase()};`,
+    )
+    .join("");
 };
 
 export { getEmojiSize, getAnimationStyles, emojiToUnicodeHex };
