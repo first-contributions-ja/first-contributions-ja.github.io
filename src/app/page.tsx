@@ -19,10 +19,12 @@ import SectionTitle from "../components/ui/section-title";
 import { emojiToUnicodeHex } from "@/utils/animated-emoji";
 
 export default function Home() {
-  const contributorsGroups = groupContributorsBySection(
-    contributorsReversed,
-    4,
-  );
+  const contributorsGroups = groupContributorsBySection(contributorsReversed);
+
+  // 最初の4セクションはページの構成上この位置に固定されている。5つ目以降は
+  // 同じ表示で順に並べる（#279）。
+  const [firstGroup, secondGroup, thirdGroup, fourthGroup] = contributorsGroups;
+  const remainingGroups = contributorsGroups.slice(4);
 
   return (
     <>
@@ -59,7 +61,7 @@ export default function Home() {
       </section>
 
       <GradientBackground mainColor={latestContributorsColor}>
-        <ScreenEmojis contributors={contributorsGroups[0]} isTopSection />
+        {firstGroup && <ScreenEmojis contributors={firstGroup} isTopSection />}
 
         <section className="mx-auto flex h-screen max-w-screen-lg items-center justify-center px-4 text-center">
           <div className="relative">
@@ -84,7 +86,7 @@ export default function Home() {
           </div>
         </section>
 
-        <ScreenEmojis contributors={contributorsGroups[1]} />
+        {secondGroup && <ScreenEmojis contributors={secondGroup} />}
         <section className="mx-auto max-w-screen-lg px-4 lg:px-0">
           <SpeechBubbleWrapper>
             <SpeechBubbleItem>
@@ -129,7 +131,7 @@ export default function Home() {
           </SpeechBubbleWrapper>
         </section>
 
-        <ScreenEmojis contributors={contributorsGroups[2]} />
+        {thirdGroup && <ScreenEmojis contributors={thirdGroup} />}
         <section className="mx-auto mt-8 max-w-screen-lg px-4 lg:px-0">
           <SpeechBubbleWrapper>
             <SpeechBubbleItem>
@@ -191,7 +193,17 @@ export default function Home() {
           </SpeechBubbleWrapper>
         </section>
 
-        <ScreenEmojis contributors={contributorsGroups[3]} />
+        {fourthGroup && <ScreenEmojis contributors={fourthGroup} />}
+
+        {/* 5つ目以降。41人目以降の絵文字がここに出る（#279） */}
+        {remainingGroups.map((group, index) => (
+          <section
+            key={index}
+            className="relative mx-auto h-screen max-w-screen-lg"
+          >
+            <ScreenEmojis contributors={group} />
+          </section>
+        ))}
         <section className="mx-auto flex h-screen max-w-screen-lg items-center px-4 lg:px-0">
           <SpeechBubbleWrapper type="left">
             <SpeechBubbleItem>
