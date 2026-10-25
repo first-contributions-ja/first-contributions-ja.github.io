@@ -700,12 +700,17 @@
     "github": "https://github.com/pn7z2hm2hn-hue",
     "favoriteColor": "#808000",
     "favoriteEmoji": "🪟"
-
   },
-    {
+  {
     "name": "ahiru",
     "github": "https://github.com/ahiru401066",
     "favoriteColor": "#ff7f50",
     "favoriteEmoji": "☘️"
+  },
+  {
+    "name": "uemurahajime",
+    "github": "https://github.com/uemurahajime",
+    "favoriteColor": "#0000ff",
+    "favoriteEmoji": "☕️"
   }
 ]
