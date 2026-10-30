@@ -16,7 +16,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.14",
     "@mui/material": "^5.15.14",
-    "next": "16.3.6",
+    "next": "16.4.1",
     "react": "^18",
     "react-dom": "^18"
   },
@@ -34,7 +34,7 @@
     "prettier-plugin-tailwindcss": "^0.5.12",
     "tailwindcss": "^3.3.0",
     "typescript": "^5",
-    "vitest": "^5.0.0"
+    "vitest": "^5.0.5"
   },
   "lint-staged": {
     "*.{vue, ts, js}": "eslint --fix",
